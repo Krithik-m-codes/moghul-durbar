@@ -27,17 +27,17 @@ header nav {
 
 }
 
-header .head-col-1{
+header .head-col-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 
-header .head-col-1 img{
+header .head-col-1 img {
     width: 50px;
     height: auto;
-    margin:  auto 0.8rem;
+    margin: auto 0.8rem;
     transition: all 0.3s ease;
 }
 
@@ -116,56 +116,69 @@ nav a:hover {
 main {
     width: 100%;
     height: 100vh;
-    background-color: #414141;
+    background-image: linear-gradient(179deg, rgba(0, 0, 0, 1) 9.2%, rgba(127, 16, 16, 1) 103.9%);
+    background-position: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
 /* Section styles start from here  */
 section {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 /* Section 2 styles */
 .section-2 {
-    background-color: #313131;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+
 }
 
 .section-3 {
-    background-color: #616161;
+    background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
 
 }
 
-.section-2 {
-    background-color: #313131;
+.section-4 {
+    background-image: radial-gradient(circle farthest-corner at 32.7% 82.7%, rgba(173, 0, 171, 1) 8.3%, rgba(15, 51, 92, 1) 79.4%);
 }
 
 
 footer {
-    padding: 0 auto;
+    /* padding: 2rem 1rem; */
+    padding: 4rem 0;
     width: 100%;
     height: 60vh;
     display: flex;
     /* gap: 1px; */
+    background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
     align-items: center;
     flex-direction: row;
-    background-color: transparent;
     justify-content: space-around;
-    
+
 }
+
 /* 
 footer .footer-col-1 img{
     opacity;
 
 } */
-#foot-logo{
+#foot-logo {
     width: 200px;
     height: auto;
     /* opacity: 0.5; */
 }
 
-#foot-logo:hover{
+#foot-logo:hover {
     /* opacity: 0.5; */
     filter: brightness(1.5);
     box-shadow: 0px 0px 10px 5px #bbbbbb;
@@ -174,7 +187,8 @@ footer .footer-col-1 img{
     /* transform: scale(1.5); */
 }
 
-footer .foot-cols{
+footer .foot-cols {
+    margin: auto;
     height: 100%;
     min-width: 30vw;
     width: auto;
@@ -194,17 +208,13 @@ footer .foot-col-1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    
+
+
 }
 
-footer .foot-socialMediaLinks-container img{
+footer .foot-socialMediaLinks-container img {
     width: 50px;
     height: auto;
     margin: 0.1rem;
     transition: all 0.3s ease;
 }
-
-
-
-
