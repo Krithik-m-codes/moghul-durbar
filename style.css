@@ -264,4 +264,29 @@ footer .foot-socialMediaLinks-container img {
         transition: all 0.3s ease;
     }
 
+    footer{
+        min-height: 90vh;
+        max-height: auto;
+        min-width: 100%;
+        max-width: auto;
+        display: flex;
+        padding: 0 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .foot-cols{
+        width: 90%;
+        min-height: 20vh;
+        max-height: auto;
+        margin: 1.5rem auto;
+    }
+
+    footer img{
+        display: none;
+
+    }
+    
+
 }
