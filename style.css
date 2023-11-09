@@ -322,6 +322,14 @@ footer .foot-socialMediaLinks-container img {
     header .head-col {
         margin: 0 auto;
     }
+
+    header .head-col-2 {
+        display: none;
+    }
+
+    header 
+
+
 /* 
     header nav {
         height: 100%;
@@ -348,9 +356,13 @@ footer .foot-socialMediaLinks-container img {
 
     /* Hero section styles here  */
     .hero-section{
-        background-image: url(https://i.pinimg.com/564x/be/cb/f4/becbf4b06f7394e88a5c8f379a0c320c.jpg);
+        background-image: url(./assets/img/mobile-size-backgroundForHeroSsection.jpeg);
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        padding-top: 10vh;
     }
 
 
