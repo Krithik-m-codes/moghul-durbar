@@ -7,30 +7,45 @@
     <title>Moghul Durbar</title>
     <!-- Including cdn for fonts and icons as well as scripting scripts  -->
     <link rel="stylesheet" href="cssResest.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
-    
+
 </head>
 
 <body>
     <!-- This part contains the header of the page and necessary links to other pages. -->
+
     <header>
+        <!-- the below div is for the menu toggle button  -->
+        <div class="menu-toggle">
+            <i class="ri-menu-3-fill"></i>
+            <!-- <i class="ri-menu-2-fill"></i> -->
+        </div>
+        <!-- the below nav is for the menu items in the menu toggle  -->
+        <nav class="navigation">
+            <p><a href="#" target="">Home</a></p>
+            <p><a href="#" target="_blank">About</a></p>
+            <p><a href="#" target="_blank">Cook wit me</a></p>
+            <p><a href="#" target="_blank">Menu</a></p>
+        </nav>
         <div class=" head-col head-col-1">
             <img src="/assets/img/header-md-logo.png" alt="Mughal Durbar Logo">
             <h2>Moghul <span>Durbar</span></h2>
         </div>
+        <!-- this part contains the navigation for all device sizes -->
         <div class=" head-col head-col-2">
             <nav>
-                <p><a href="#" target="_blank">Home</a></p>
-                <p><a href="#" target="_blank">About</a></p>
-                <p><a href="#" target="_blank">Cook wit me</a></p>
-                <p><a href="#" target="_blank">Menu</a></p>
+                <p><a href="#home" target="_self">Home</a></p>
+                <p><a href="#section-2" target="_self">About</a></p>
+                <p><a href="#section-3" target="_self">Cook wit me</a></p>
+                <p><a href="#section-4" target="_self">random</a></p>
             </nav>
         </div>
     </header>
 
     <!-- this part contains the main body of the page and a hero. -->
-    <section class="section hero-section">
+    <section class="section hero-section" id="Home">
         <div class="hero-col-1">
             <h1>Food is the ingredient <br>that binds us together.</h1>
             <p>Food is the ingredient that binds us together.</p>
@@ -39,26 +54,32 @@
             <button>Order Now</button>
         </div>
     </section>
+
+    <!-- This part contains the main body of the page. -->
     <main>
-        <h2 style="text-align: center;">This is the main section lol</h2>       
+        <h2 style="text-align: center;">This is the main section lol</h2>
     </main>
-    <section class="section section-2">
+
+    <!-- This part contains the sections of the page. -->
+    <section class="section section-2" id="section-2">
         <h2>This is the section 2 of this webpage</h2>
     </section>
-    <section class="section section-3">
+    <section class="section section-3" id="section-3">
         <h3>This is section 3 of this webpage</h3>
     </section>
-    <section class="section section-4">
+    <section class="section section-4" id="section-4">
         <h2>This is section 4 of this webpage</h2>
     </section>
+
+    <!-- Footer Section of the page -->
     <footer>
         <div class="foot-col-1 foot-cols">
             <div class="foot-logo-container" style="margin: auto;">
                 <img src="/assets/img/restaurant.png" alt="restaurant logo" id="foot-logo"><br><br>
-                <p>Mughal <span>Durbar</span> mate</p>
+                <p>Find more about <br> Mughal <span>Durbar</span> @ below links</p>
             </div>
             <div class="foot-socialMediaLinks-container" style="margin: auto;">
-                <!-- Faacebook Icon with a link -->
+                <!-- Facebook Icon with a link -->
                 <a href="#"><img src="/assets/img/facebook.png" alt="facebook icon"></a>
                 <!-- Twitter Icon with a link -->
                 <a href="#"><img src="/assets/img/twitter.png" alt="twitter icon"></a>
@@ -69,17 +90,19 @@
         <div class="foot-col-2 foot-cols">
             <div></div>
             <div></div>
-            <div></div>
         </div>
         <div class="foot-col-3 foot-cols">
             <div></div>
             <div></div>
             <div></div>
         </div>
-
     </footer>
+    <div class="footer-cpr">
+        <h2> &copy; Copyright and Developed by <span> Krithik M</span>&reg; </h2>
+    </div>
 
 
 </body>
 <!-- Including cdn for fonts and icons as well as scripting scripts  -->
+
 </html>

@@ -14,6 +14,40 @@ header {
     position: fixed;
 }
 
+/* Below style codes are for menu toggle page for mobile devices only  */
+header .menu-toggle{
+    display: block;
+    cursor: pointer;
+    margin: 0 1rem;
+    color: #212111;
+
+}
+
+header .navigation{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(179deg, rgba(0, 0, 0, 1) 9.2%, rgba(127, 16, 16, 1) 103.9%);
+    z-index: 100;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+header .navigation.active{
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* End of mobiel menu page menu bar styles */
+
+
+
+/* Header styles from here for all devices  */
 header .head-col {
     margin: 0 auto;
 }
@@ -112,7 +146,7 @@ nav a:hover {
 
 
 
-
+/* Main content styling starts from here  */
 main {
     width: 100%;
     height: 100vh;
@@ -126,7 +160,7 @@ main {
 }
 
 
-/* Section styles start from here  */
+/* basic Section styles for all sections start from here  */
 section {
     width: 100%;
     height: 100vh;
@@ -143,23 +177,24 @@ section {
 
 }
 
+/* Section 3 styles starts from here  */
 .section-3 {
     background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
 
 }
 
+ /* Section 4 styles starts from here  */
 .section-4 {
     background-image: radial-gradient(circle farthest-corner at 32.7% 82.7%, rgba(173, 0, 171, 1) 8.3%, rgba(15, 51, 92, 1) 79.4%);
 }
 
+/* Footer styling starts from here  */
 
 footer {
-    /* padding: 2rem 1rem; */
     padding: 4rem 0;
     width: 100%;
     height: 60vh;
     display: flex;
-    /* gap: 1px; */
     background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
     align-items: center;
     flex-direction: row;
@@ -167,11 +202,6 @@ footer {
 
 }
 
-/* 
-footer .footer-col-1 img{
-    opacity;
-
-} */
 #foot-logo {
     width: 200px;
     height: auto;
@@ -220,11 +250,35 @@ footer .foot-socialMediaLinks-container img {
 }
 
 
+/* Copyright and dev team information */
+.footer-cpr{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    /* font-size: 2rem; */
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.footer-cpr span{
+    color: #45925b;
+    transition: linear 0.4 ease-in-out;
+    transform: scale(1.5);
+}
+
 
 
 
 /* Web responsive styles from here */
 @media (max-width: 768px) {
+
+    /* Mobile devices (portrait and landscape phones, less than 768px) styles here */
+
+    /* Header styles here  */
     header {
         height: 10vh;
         width: 100%;
@@ -235,6 +289,26 @@ footer .foot-socialMediaLinks-container img {
         position: fixed;
     }
 
+    /* for the disapepring menu bar for mobiles  */
+
+    /* header .menu-toggle {
+        display: block;
+        cursor: pointer;
+        margin: 0 1rem;
+    }
+
+    header .navigation {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: -100;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(179deg, rgba(0, 0, 0, 1) 9.2%, rgba(127, 16, 16, 1) 103.9%);
+        z-index: 100;
+        opacity: 0.9;
+        transition: all 0.3s ease;
+    } */
     
 
     header .head-col {
@@ -263,6 +337,31 @@ footer .foot-socialMediaLinks-container img {
         margin: auto 0.8rem;
         transition: all 0.3s ease;
     }
+
+    /* Hero section styles here  */
+    .hero-section{
+        background-image: url(https://i.pinimg.com/564x/be/cb/f4/becbf4b06f7394e88a5c8f379a0c320c.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    /* Main styles here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     footer{
         min-height: 90vh;
