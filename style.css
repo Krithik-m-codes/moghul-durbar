@@ -14,14 +14,9 @@ header {
     position: fixed;
 }
 
-header .head-col-1 {
+header .head-col {
     margin: 0 auto;
 }
-
-header .head-col-2 {
-    margin: 0 auto;
-}
-
 
 header nav {
     height: 100%;
@@ -30,6 +25,20 @@ header nav {
     justify-content: space-around;
     align-items: center;
 
+}
+
+header .head-col-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+header .head-col-1 img{
+    width: 50px;
+    height: auto;
+    margin:  auto 0.8rem;
+    transition: all 0.3s ease;
 }
 
 
@@ -110,11 +119,15 @@ main {
     background-color: #414141;
 }
 
+
+/* Section styles start from here  */
 section {
     width: 100%;
     height: 90vh;
 }
 
+
+/* Section 2 styles */
 .section-2 {
     background-color: #313131;
 }
@@ -185,6 +198,12 @@ footer .foot-col-1 {
     
 }
 
+footer .foot-socialMediaLinks-container img{
+    width: 50px;
+    height: auto;
+    margin: 0.1rem;
+    transition: all 0.3s ease;
+}
 
 
 
