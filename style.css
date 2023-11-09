@@ -218,3 +218,50 @@ footer .foot-socialMediaLinks-container img {
     margin: 0.1rem;
     transition: all 0.3s ease;
 }
+
+
+
+
+
+/* Web responsive styles from here */
+@media (max-width: 768px) {
+    header {
+        height: 10vh;
+        width: 100%;
+        background-color: rebeccapurple;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+    }
+
+    
+
+    header .head-col {
+        margin: 0 auto;
+    }
+/* 
+    header nav {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    } */
+
+    header .head-col-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    header .head-col-1 img {
+        width: 50px;
+        height: auto;
+        margin: auto 0.8rem;
+        transition: all 0.3s ease;
+    }
+
+}
