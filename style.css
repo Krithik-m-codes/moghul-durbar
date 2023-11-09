@@ -202,6 +202,12 @@ footer {
 
 }
 
+.foot-col-1 .foot-logo-container{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
 #foot-logo {
     width: 200px;
     height: auto;
