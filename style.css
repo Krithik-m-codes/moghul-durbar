@@ -272,6 +272,10 @@ footer .foot-socialMediaLinks-container img {
     margin: 0 auto;
 }
 
+.footer-cpr h2{
+    font-size: 2vw;
+}
+
 .footer-cpr span{
     color: #45925b;
     transition: linear 0.4 ease-in-out;
@@ -297,7 +301,7 @@ footer .foot-socialMediaLinks-container img {
         position: fixed;
     }
 
-    /* for the disapepring menu bar for mobiles  */
+    /* for the disappearing menu bar for mobiles  */
 
     /* header .menu-toggle {
         display: block;
@@ -356,7 +360,7 @@ footer .foot-socialMediaLinks-container img {
 
     /* Hero section styles here  */
     .hero-section{
-        background-image: url(./assets/img/mobile-size-backgroundForHeroSsection.jpeg);
+        background-image: url(./assets/img/mobile-size-backgroundForHeroSection.jpeg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -364,6 +368,37 @@ footer .foot-socialMediaLinks-container img {
         width: 100%;
         padding-top: 10vh;
     }
+
+
+    .hero-section h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        margin: 1.5rem 0.3rem;
+        text-shadow: 1px 10px 15px #0000007e;
+    }
+
+    .hero-section .hero-col-1 p{
+        text-align: right;
+        color: black;
+        margin: auto;
+        font-size: inherit;
+        text-shadow: #fff 1px 1px 1px;
+
+    }
+
+    .hero-section .hero-col-2 button{
+        padding: 0.7rem 1.5rem;
+        margin: auto;
+        font-size: 1.2rem;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+        box-shadow: #000 4px 3px 4px;
+    }
+
+
+
 
 
     /* Main styles here  */
@@ -405,6 +440,11 @@ footer .foot-socialMediaLinks-container img {
     footer img{
         display: none;
 
+    }
+
+
+    .footer-cpr h2{
+        font-size: 4vw;
     }
     
 
