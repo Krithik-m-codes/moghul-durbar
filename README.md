@@ -39,7 +39,7 @@ The website can be used to:
 
 ## Authors
 
-- [Krithik M](www.linkedin.com/in/krithik-m-622970223)
-- [Other contributors, if any]
+- [Krithik M](https://www.linkedin.com/in/krithik-m-622970223/)
+- [Mithuna Kaushik](https://www.linkedin.com/in/m-kaushik-720283229/)
 
 Go throught the code and have a blast at it ya
