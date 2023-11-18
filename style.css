@@ -16,7 +16,7 @@ header {
 
 /* Below style codes are for menu toggle page for mobile devices only  */
 header .menu-toggle {
-    display: block;
+    display: none;
     cursor: pointer;
     margin: 0 1rem;
     color: #212111;
@@ -36,15 +36,15 @@ header .navigation {
     transition: all 0.3s ease;
 }
 
-header .navigation.active {
+/* header .navigation.active {
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+} */
 
-/* End of mobiel menu page menu bar styles */
+/* End of mobile     menu page menu bar styles */
 
 
 
@@ -274,7 +274,7 @@ footer .foot-socialMediaLinks-container img {
 }
 
 .footer-cpr h2 {
-    font-size: 2vw;
+    font-size: 1.4vw;
 }
 
 .footer-cpr span {
