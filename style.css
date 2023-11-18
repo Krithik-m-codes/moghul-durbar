@@ -193,13 +193,14 @@ section {
 
 footer {
     padding: 4rem 0;
-    width: 100%;
-    height: 60vh;
+    width: auto;
+    height: auto;
     display: flex;
     background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
+    /* overflow: hidden; */
 
 }
 
@@ -224,8 +225,8 @@ footer {
 footer .foot-cols {
     margin: auto;
     height: 100%;
-    min-width: 30vw;
-    width: auto;
+    min-width: auto;
+    max-width: auto;
     /* border: #ffffff solid 1px; */
     background-color: #212121;
     /* background-color: #45925b; */
@@ -291,9 +292,9 @@ footer .foot-socialMediaLinks-container img {
 
     /* Mobile devices (portrait and landscape phones, less than 768px) styles here */
 
-    /* Header styles here  */
+    /* Header styles for mobile devices only starts here  */
     header {
-        height: 10vh;
+        height: 8vh;
         width: 100%;
         background-color: rebeccapurple;
         display: flex;
@@ -301,27 +302,6 @@ footer .foot-socialMediaLinks-container img {
         align-items: center;
         position: fixed;
     }
-
-    /* for the disappearing menu bar for mobiles  */
-
-    /* header .menu-toggle {
-        display: block;
-        cursor: pointer;
-        margin: 0 1rem;
-    }
-
-    header .navigation {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: -100;
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(179deg, rgba(0, 0, 0, 1) 9.2%, rgba(127, 16, 16, 1) 103.9%);
-        z-index: 100;
-        opacity: 0.9;
-        transition: all 0.3s ease;
-    } */
 
 
     header .head-col {
@@ -348,6 +328,7 @@ footer .foot-socialMediaLinks-container img {
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        
     }
 
     header .head-col-1 img {
@@ -357,13 +338,40 @@ footer .foot-socialMediaLinks-container img {
         transition: all 0.3s ease;
     }
 
-    /* Hero section styles here  */
+        /* for the disappearing menu bar for mobiles  */
+
+    /* header .menu-toggle {
+        display: block;
+        cursor: pointer;
+        margin: 0 1rem;
+    }
+
+    header .navigation {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: -100;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(179deg, rgba(0, 0, 0, 1) 9.2%, rgba(127, 16, 16, 1) 103.9%);
+        z-index: 100;
+        opacity: 0.9;
+        transition: all 0.3s ease;
+    } */
+
+
+
+    /* End of styles for header menu page , header styles */
+
+
+    /* Hero section styles for mobile devices only starts here  */
     .hero-section {
         background-image: url(./assets/img/mobile-size-backgroundForHeroSection.jpeg);
         background-position: center;
-        background-size: cover;
+        /* background-size: cover; */
         background-repeat: no-repeat;
-        height: 100vh;
+        background-size: cover;
+        height: 90vh;
         width: 100%;
         padding-top: 10vh;
     }
@@ -372,17 +380,22 @@ footer .foot-socialMediaLinks-container img {
     .hero-section h1 {
         font-size: 2.5rem;
         font-weight: 500;
+        text-align: center;
         margin-bottom: 1rem;
-        margin: 1.5rem 0.3rem;
-        text-shadow: 1px 10px 15px #0000007e;
+        /* box-shadow: 20px 20px 50px rgb(0, 0, 0); */
+        text-shadow: 6px 12px 15px #000000;
     }
 
     .hero-section .hero-col-1 p {
         text-align: right;
-        color: black;
+        color: #FAB40B;
         margin: auto;
         font-size: inherit;
-        text-shadow: #fff 1px 1px 1px;
+        text-shadow: #00000061 1px 1px 1px;
+        background-color: #060318;
+        border-radius: 4.5rem 0 0 4.5rem;
+        box-shadow: 10px 10px 20px #ffffff;
+        padding: 0.6vh 0.2vw 0.6vh 0.2vw ;
 
     }
 
@@ -394,13 +407,14 @@ footer .foot-socialMediaLinks-container img {
         border: none;
         border-radius: 5px;
         box-shadow: #000 4px 3px 4px;
+        
     }
 
 
 
 
 
-    /* Main styles here  */
+    /* Main styles for mobile devices only starts here  */
 
 
 
@@ -416,36 +430,81 @@ footer .foot-socialMediaLinks-container img {
 
 
 
-
+/* Footer styles for mobile device only starts here */
     footer {
-        min-height: 90vh;
-        max-height: auto;
-        min-width: 100%;
-        max-width: auto;
-        display: flex;
+        width: auto;
+        height: auto;
         padding: 0 0;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background: rgb(5, 5, 5);
+        font-size: 2vh;
         background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgba(63, 63, 82, 1) 35%, rgba(126, 126, 126, 1) 58%, rgba(163, 163, 163, 1) 81%, rgba(255, 255, 255, 1) 100%);
     }
 
     footer .foot-cols {
-        width: 90%;
-        min-height: 20vh;
-        max-height: auto;
+        min-width: 50vw;
+        max-width: auto;
+        height: auto;
         margin: 1.5rem auto;
     }
 
-    footer img {
-        display: none;
+    footer #foot-logo {
+        width: 150px;
+        height: auto;
+        margin: 0 0 1.2rem 0;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #fff;
+        /* opacity: 0.5; */
 
     }
 
+    .foot-socialMediaLinks-container img {
+        width: 24px;
+        height: 24px;
+        margin: 0 0.3rem;
+        transition: all 0.3s ease;
+    }
+    
 
-    .footer-cpr h2 {
-        font-size: 3vw;
+
+
+    .foot-cols{
+        height: auto;
+        width: auto;
+        /* padding: 0.5rem 0; */
+        margin: auto;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .foot-cols a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    
+
+
+    /* footer copyright styles  */
+    .footer-cpr{
+        height: 8dvh;
+    }
+
+    .footer-cpr h2 {  
+        font-size: 3.4vw;
+        color: #45925b;
+    }
+
+    .footer-cpr span {
+        color: #ffffff;
+        transition: linear 0.4 ease-in-out;
+        transform: scale(1.5);
     }
 
 
