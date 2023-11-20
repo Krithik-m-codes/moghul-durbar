@@ -321,6 +321,47 @@ footer .foot-socialMediaLinks-container img {
     transition: all 0.3s ease;
 }
 
+.foot-col-3 .foot-col-3-1{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    /* height: 100%;
+    width: 100%; */
+    
+}
+
+.foot-col-3-1 a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.foot-col-4 .foot-col-4-1{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    /* height: 100%;
+    width: 100%; */
+    
+}
+
+.foot-col-4-1 a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+
+
 
 
 
