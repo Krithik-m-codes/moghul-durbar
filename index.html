@@ -1,4 +1,3 @@
-<!-- FILEPATH: /workspaces/Restaurant-website/index.html -->
 <!-- This is the HTML code for a restaurant website. It includes a header with navigation links, a hero section, main section, and footer with social media links. -->
 <!DOCTYPE html>
 <html lang="en">
@@ -6,38 +5,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moghul Durbar</title>
+    
     <!-- Including cdn for fonts and icons as well as scripting scripts  -->
-    <link rel="stylesheet" href="cssResest.css">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="/css/cssResest.css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/queries.css">
+
+    <!-- favicon -->
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+    <title>Moghul Durbar</title>
 
 </head>
 
 <body>
-    <!-- This part contains the header of the page and necessary links to other pages. -->
-
+    <!-- This part contains the header of the page -->
     <header>
         <div class=" head-col head-col-1">
             <img src="./assets/img/header-md-logo.png" alt="Mughal Durbar Logo">
             <h2>Moghul <span>Durbar</span></h2>
         </div>
-        <!-- this part contains the navigation for all device sizes -->
+        <!-- this part contains main the navigation for all device sizes -->
         <div class=" head-col head-col-2">
-            <nav>
+            <nav class="main-nav">
                 <p><a href="#home" target="_self">Home</a></p>
                 <p><a href="#section-2" target="_self">About</a></p>
                 <p><a href="#section-3" target="_self">Cook wit me</a></p>
                 <p><a href="#section-4" target="_self">random</a></p>
             </nav>
         </div>
-
-        <!-- the below div is for the menu toggle button  -->
-        <div class="menu-toggle .hamburger-menu ">
-            <img width="45" height="45" src="https://img.icons8.com/sf-black/64/menu.png" alt="menu"  style="filter: brightness(2);"/>
-        </div>
+        
+        <!-- the below button is for the menu toggle button  -->
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+        
         <!-- the below nav is for the menu items in the menu toggle  -->
-        <nav class="navigation">
+        <nav class="mobile-nav">
             <p><a href="#" target="_blank">Home</a></p>
             <p><a href="#" target="_blank">About</a></p>
             <p><a href="#" target="_blank">Cook wit me</a></p>
@@ -75,9 +80,10 @@
     <!-- Footer Section of the page -->
     <footer>
         <div class="foot-col-1 foot-cols">
+            <h2>Mughal <span>Durbar</span></h2>
             <div class="foot-logo-container">
                 <img src="./assets/img/restaurant.png" alt="restaurant logo" id="foot-logo">
-                <p> <b>To know more about</b> <br> Mughal <span>Durbar</span> <br> +91900000000 <br>
+                <p> <b>To know more about MD: </b><br><br> +91900000000 <br>
                     office@moghuldurbar.in </p>
             </div>
             <div class="foot-socialMediaLinks-container" style="margin: auto;">
@@ -96,7 +102,8 @@
             </div>
         </div>
         <div class="foot-col-2 foot-cols">
-            <h3>Useful Links</h>
+            <h3> Useful Links</h>
+            <hr>
             <div class="foot-col-2-1">
                 <a href="#" target="_blank"><p>Home</p></a>
                 <a href="#" target="_blank"><p>About</p></a>
