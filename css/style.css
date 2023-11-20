@@ -1,0 +1,351 @@
+body {
+    background-color: #212121;
+    color: #fff;
+}
+
+
+header {
+    height: 10vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+/* Below style codes are for menu toggle page for mobile devices only  */
+header .btn-mobile-nav {
+    display: none;
+
+}
+
+header .mobile-nav {
+    display: none;
+}
+
+/* header .menu-toggle {
+    display: none;
+    cursor: pointer;
+    margin: 0 1rem;
+    color: #212111;
+
+}
+
+header .navigation {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(179deg, rgba(0, 0, 0, 1) 9.2%, rgba(127, 16, 16, 1) 103.9%);
+    z-index: 100;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+} */
+
+/* header .navigation.active {
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+/* End of mobile     menu page menu bar styles */
+
+
+
+/* Header styles from here for all devices  */
+header .head-col {
+    margin: 0 auto;
+}
+
+header nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+header .head-col-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+header .head-col-1 img {
+    width: 50px;
+    height: auto;
+    margin: auto 0.8rem;
+    transition: all 0.3s ease;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    /* font-size: 1.5rem; */
+    font-weight: 500;
+    margin: auto 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav a:hover {
+    color: #45925b;
+    transform: scale(1.5);
+    filter: brightness(1.2);
+
+}
+
+nav a::after {
+    content: " ";
+    display: none;
+    align-self: center;
+    width: 0%;
+    height: 3px;
+}
+
+nav a:hover::after {
+    content: " ";
+    display: block;
+    align-self: center;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all 1.5s ease;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+
+
+/* Hero section styles starts from here  */
+
+.hero-section {
+    height: calc(100vh - 10vh);
+    background-color: rgb(70, 67, 64);
+    font-size: 1.5rem;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../assets/img/hero-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    gap: 4rem;
+
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin: 1rem 0;
+    text-shadow: 1px 10px 15px #212111;
+}
+
+.hero-section .hero-col-1 p {
+    text-align: right;
+    color: black;
+    margin: auto;
+    font-size: inherit;
+}
+
+.hero-col-2 button {
+    padding: 0.9rem 2rem;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 3px 4px;
+
+}
+
+.hero-section .hero-col-2 {
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+/* Main content styling starts from here  */
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(179deg, rgba(0, 0, 0, 1) 9.2%, rgba(127, 16, 16, 1) 103.9%);
+    background-position: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* basic Section styles for all sections start from here  */
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Section 2 styles */
+.section-2 {
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+
+}
+
+/* Section 3 styles starts from here  */
+.section-3 {
+    background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
+
+}
+
+/* Section 4 styles starts from here  */
+.section-4 {
+    background-image: radial-gradient(circle farthest-corner at 32.7% 82.7%, rgba(173, 0, 171, 1) 8.3%, rgba(15, 51, 92, 1) 79.4%);
+}
+
+/* Footer styling starts from here  */
+
+footer {
+    padding: 2rem 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    /* font-size: 1.4em; */
+    background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    /* overflow: hidden; */
+
+}
+
+.foot-col-1 .foot-logo-container {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 0.5rem 0 0 0;
+    gap: 0.2rem;
+
+}
+
+.foot-col-1 span{
+    color: #45925b;
+    text-decoration: wavy;
+}
+
+footer .foot-cols {
+    margin: auto;
+    height: 100%;
+    min-width: auto;
+    max-width: auto;
+    /* border: #ffffff solid 1px; */
+    background-color: #212121;
+    /* background-color: #45925b; */
+}
+
+footer .foot-col-1 {
+    height: 100%;
+    width: auto;
+    /* border: #ffffff solid 1px; */
+    padding: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#foot-logo {
+    min-width: 150px;
+    max-width: 180px;
+    height: auto;
+    margin: auto;
+    margin-top: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff;
+    /* opacity: 0.5; */
+}
+
+footer .foot-socialMediaLinks-container img {
+    width: 50px;
+    height: auto;
+    margin: 0.4rem 0.3rem 0 0;
+    transition: all 0.3s ease;
+}
+
+.foot-socialMediaLinks-container img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.5);
+    filter: drop-shadow(0 0 0.5rem #fff);
+
+}
+
+
+.foot-col-2 .foot-col-2-1{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    /* height: 100%;
+    width: 100%; */
+    
+}
+
+.foot-col-2-1 a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+/* Copyright and dev team information */
+.footer-cpr {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    /* font-size: 2rem; */
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.footer-cpr h2 {
+    font-size: 1.4vw;
+}
+
+.footer-cpr span {
+    color: #45925b;
+    transition: linear 0.4 ease-in-out;
+    transform: scale(1.5);
+}
