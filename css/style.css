@@ -226,6 +226,8 @@ section {
 
 
 /* Section 5 or the locationMap section styles starts from here  */
+/* Gonna need to add stripes behind the map to look cool styles here  */
+
 .locationMapSection {
     background-color: #212121;
     display: flex;
@@ -235,20 +237,15 @@ section {
     flex-direction: row;
 }
 
-.locationMapSection .mapInfoContainer,
-.locationMapSection .mapContainer {
-    width: 45%;
-    padding: 0 2rem;
-    height: auto;
-    margin: 0;
-    /* background-color: #9FACE6; */
-
+.mapInfoContainer {
+    padding: 1rem 0 0 2rem;
+    width: 50vw;
 }
 
-.mapInfoContainer{
-    padding: 1rem;
-    gap: 1rem;
-
+.mapContainer {
+    margin-right: 4rem;
+    width: 50vw;
+    height: 60vh;
 }
 
 .locationMapSection h3 {
@@ -271,15 +268,20 @@ section {
     text-shadow: 1px 1px 2px #fff;
     text-emphasis: filled;
     -webkit-text-emphasis: filled;
-    /* text-emphasis-position: under; */
     -webkit-text-emphasis-position: under;
     text-emphasis-position: under;
 }
 
-.mapContainer{
-    margin-right: 2rem;
-}
+/* Footer styling starts from here  */
 
+footer {
+    padding: 2rem 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+    align-items: center;
+}
 
 
 

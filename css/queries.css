@@ -146,28 +146,44 @@
 
     /* section 5 styles for location map  */
 
-    .locationMapSection{
+    .locationMapSection {
         width: 100%;
-        display: grid;
-        place-items: center;
+        height: 100vh;
+        font-size: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 1rem 0;
-        gap: 1rem;
+        flex-direction: column;
+        column-gap: 2rem;
     }
 
-    .locationMapSection .mapinfoContainer{
+    .locationMapSection .mapInfoContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0 1rem;
-        font-size: medium;
+        font-size: small;
     }
 
-    .locationMapSection iframe{
+    .locationMapSection .mapContainer {
+        width: 50%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+        background-color: #440044;
+        overflow: hidden;
+        flex-basis: auto;
+    }
+
+    .mapContainer iframe {
         width: 100%;
-        height: auto;
+        height: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
     }
-
 
 
     /* Footer styles for mobile device only starts here */
