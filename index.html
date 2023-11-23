@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Including cdn for fonts and icons as well as scripting scripts  -->
     <link rel="stylesheet" href="/css/cssResest.css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
@@ -34,20 +34,22 @@
                 <p><a href="#section-4" target="_self">random</a></p>
             </nav>
         </div>
-        
+
         <!-- the below button is for the menu toggle button  -->
-        <button class="btn-mobile-nav">
-            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        <button class="btn-mobileMenu">
+            <ion-icon class="icon-mobile-nav" size="large" name="menu-sharp" onclick="mobileNavToggleO()"></ion-icon>
+            <ion-icon class="icon-mobile-nav" size="large " name="close-sharp" onclick="mobileNavToggleC()"></ion-icon>
         </button>
-        
+
         <!-- the below nav is for the menu items in the menu toggle  -->
-        <nav class="mobile-nav">
-            <p><a href="#" target="_blank">Home</a></p>
-            <p><a href="#" target="_blank">About</a></p>
-            <p><a href="#" target="_blank">Cook wit me</a></p>
-            <p><a href="#" target="_blank">Menu</a></p>
-        </nav>
+        <div id="mobile-menu">
+            <nav class="mobile-nav">
+                <p><a href="#" target="_blank">Home</a></p>
+                <p><a href="#" target="_blank">About</a></p>
+                <p><a href="#" target="_blank">Cook wit me</a></p>
+                <p><a href="#" target="_blank">Menu</a></p>
+            </nav>
+        </div>
     </header>
 
     <!-- this part contains the main body of the page and a hero. -->
@@ -104,19 +106,35 @@
         <div class="foot-col-2 foot-cols">
             <h3> Useful Links</h3>
             <div class="foot-col-2-1">
-                <a href="#" target="_blank"><p>Home</p></a>
-                <a href="#" target="_blank"><p>About</p></a>
-                <a href="#" target="_blank"><p>Menu</p></a>
-                <a href="#" target="_blank"><p>Reservation</p></a>
+                <a href="#" target="_blank">
+                    <p>Home</p>
+                </a>
+                <a href="#" target="_blank">
+                    <p>About</p>
+                </a>
+                <a href="#" target="_blank">
+                    <p>Menu</p>
+                </a>
+                <a href="#" target="_blank">
+                    <p>Reservation</p>
+                </a>
             </div>
         </div>
         <div class="foot-col-3 foot-cols">
             <h3>Our Services</h3>
             <div class="foot-col-3-1">
-                <a href="#" target="_blank"><p>Delivery</p></a>
-                <a href="#" target="_blank"><p>Pricing</p></a>
-                <a href="#" target="_blank"><p>Discount</p></a>
-                <a href="#" target="_blank"><p>Event</p></a>
+                <a href="#" target="_blank">
+                    <p>Delivery</p>
+                </a>
+                <a href="#" target="_blank">
+                    <p>Pricing</p>
+                </a>
+                <a href="#" target="_blank">
+                    <p>Discount</p>
+                </a>
+                <a href="#" target="_blank">
+                    <p>Event</p>
+                </a>
             </div>
         </div>
         <div class="foot-col-4 foot-cols">
@@ -137,5 +155,7 @@
 
 </body>
 <!-- Including cdn for fonts and icons as well as scripting scripts  -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </html>

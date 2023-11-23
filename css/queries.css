@@ -1,4 +1,4 @@
-/* Web responsive styles from here */
+/* Web responsive styles for mobile from here */
 @media (max-width: 768px) {
 
     /* Mobile devices (portrait and landscape phones, less than 768px) styles here */
@@ -23,23 +23,13 @@
         display: none;
     }
 
-    header
-    /* 
-    header nav {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-    } */
 
     header .head-col-1 {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        
+
     }
 
     header .head-col-1 img {
@@ -49,12 +39,26 @@
         transition: all 0.3s ease;
     }
 
-        /* for the disappearing menu bar for mobiles  */
+    /* for menu bar for mobile devices  */
 
-    /* header .menu-toggle {
+    /* gonna need js to make this code work  */
+    header .btn-mobileMenu ion-icon[name="close-sharp"] {
+        color: #ffffff;
+    }
+
+    header .btn-mobileMenu ion-icon[name="menu-sharp"] {
+        color: #ffffff;
+    }
+
+
+    /* fix thiss dumbasss */
+    header .btn-mobileMenu {
         display: block;
         cursor: pointer;
         margin: 0 1rem;
+        border: none;
+        background-color: transparent;
+        /* padding: 1rem 0.5rem; */
     }
 
     header .navigation {
@@ -68,7 +72,7 @@
         z-index: 100;
         opacity: 0.9;
         transition: all 0.3s ease;
-    } */
+    }
 
 
 
@@ -106,7 +110,7 @@
         background-color: #060318;
         border-radius: 4.5rem 0 0 4.5rem;
         box-shadow: 10px 10px 20px #ffffff;
-        padding: 0.6vh 0.2vw 0.6vh 0.2vw ;
+        padding: 0.6vh 0.2vw 0.6vh 0.2vw;
 
     }
 
@@ -118,7 +122,7 @@
         border: none;
         border-radius: 5px;
         box-shadow: #000 4px 3px 4px;
-        
+
     }
 
 
@@ -141,19 +145,15 @@
 
 
 
-/* Footer styles for mobile device only starts here */
+    /* Footer styles for mobile device only starts here */
     footer {
-        width: auto;
-        height: auto;
-        padding: 0 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        overflow: hidden;
         background: rgb(5, 5, 5);
         font-size: 2vh;
-        background: rgb(131,58,180);
-        background: linear-gradient(90deg, rgb(39, 18, 53) 0%, rgb(79, 20, 20) 50%, rgb(165, 106, 22) 100%);;
+        background: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgb(39, 18, 53) 0%, rgb(79, 20, 20) 50%, rgb(165, 106, 22) 100%);
+        ;
     }
 
     footer .foot-cols {
@@ -162,6 +162,10 @@
         padding: 1em auto;
         font-size: inherit;
         flex-grow: 1;
+    }
+
+    .foot-cols:nth-child(1) {
+        display: none;
     }
 
     footer #foot-logo {
@@ -180,11 +184,11 @@
         transition: all 0.3s ease;
 
     }
-    
 
 
 
-    .foot-cols{
+
+    .foot-cols {
         height: auto;
         width: auto;
         margin: auto;
@@ -195,21 +199,21 @@
         flex-direction: column;
     }
 
-    .foot-cols a{
+    .foot-cols a {
         text-decoration: none;
         color: #fff;
     }
 
-    
+
 
 
     /* footer copyright styles  */
-    .footer-cpr{
+    .footer-cpr {
         height: 8dvh;
         background-color: rgb(235, 223, 122);
     }
 
-    .footer-cpr h2 {  
+    .footer-cpr h2 {
         font-size: 3.2vw;
         color: #0d0d0d;
         margin: 0.5rem 0;
