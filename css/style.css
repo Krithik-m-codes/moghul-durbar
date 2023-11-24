@@ -244,8 +244,11 @@ section {
 
 .mapContainer {
     margin-right: 4rem;
-    width: 50vw;
+    width: 50%;
     height: 60vh;
+    overflow: hidden;
+    box-shadow: 5rem 5rem 40rem #000000a9;
+    border-radius: 1px;
 }
 
 .locationMapSection h3 {
@@ -271,6 +274,130 @@ section {
     -webkit-text-emphasis-position: under;
     text-emphasis-position: under;
 }
+
+
+
+
+/* section 6 styling starts from here  */
+.newsletterContainer {
+    width: 100%;
+    height: 90vh;
+    background-color: #45925b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/assets/svg/blob-scene-newsletter.svg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.newsletterContainer h2 {
+    background: linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
+    padding: 0.2rem 1.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: #000000;
+    text-align: center;
+}
+
+.nl-col-1 {
+    width: 60vw;
+    /* padding: 0 4vw; */
+    height: 70vh;
+    margin-bottom: 2vw;
+    display: flex;
+    background-color: rgb(248, 237, 234);
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* gap: 1rem; */
+}
+
+.nl-inputContainer {
+    width: 100%;
+    height: 100%;
+    background-color: #9FACE6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    flex-grow: 1;
+}
+
+.nl-inputContainer h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    color: #ffffff;
+    text-wrap: wrap;
+    text-align: left;
+    /* margin-left: 1.5rem; */
+}
+
+.nl-inputContainer form{
+    width: calc(100% - 4rem);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form:nth-child(1){
+    margin-top: 1rem;
+    text-align: left;
+    font-weight: 700;
+}
+
+form input{
+    width: 90%;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 1em;
+}
+
+.nl-inputContainer button {
+    width: 100%;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    background-color: #D2042D;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 1em;
+}
+
+
+.nl-imageContainer {
+    height: 100%;
+    width: 100%;
+    background-color: #9FACE6;
+    flex-grow: 1;
+}
+
+.nl-imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+
+}
+
+
+
+
+
+
 
 /* Footer styling starts from here  */
 
