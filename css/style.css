@@ -282,7 +282,7 @@ section {
 .newsletterContainer {
     width: 100%;
     height: 90vh;
-    background-color: #45925b;
+    background-color: rgb(69, 88, 146);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,17 +329,17 @@ section {
     flex-grow: 1;
 }
 
-.nl-inputContainer h3 {
+.nl-inputContainer h4 {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 300;
     margin: 1rem 0;
-    color: #ffffff;
+    color: #000000;
     text-wrap: wrap;
     text-align: left;
     /* margin-left: 1.5rem; */
 }
 
-.nl-inputContainer form{
+.nl-inputContainer form {
     width: calc(100% - 4rem);
     height: auto;
     display: flex;
@@ -348,14 +348,22 @@ section {
     flex-direction: column;
 }
 
-form:nth-child(1){
-    margin-top: 1rem;
+.nl-inputContainer p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: #000000;
+    text-wrap: wrap;
     text-align: left;
-    font-weight: 700;
+    /* margin-left: 1.5rem; */
+
 }
 
-form input{
+/* Form newsletter container styles starts from here   */
+
+form input {
     width: 90%;
+    text-align: center;
     height: 3rem;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
@@ -394,8 +402,41 @@ form input{
 }
 
 
+/* Offer section styles starts from here   */
+div[class="offerSection"] {
+    width: 100%;
+    height: 40vh;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/assets/img/topView-restuarant.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+div[class="offerSection"] h4 {
+    background: linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
+    padding: 0.2rem 1.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: #000000;
+    text-align: center;
+}
 
+div[class="offerSection"] .offerBtnContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
 
 
 
