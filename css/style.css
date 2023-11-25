@@ -1,6 +1,7 @@
 body {
     background-color: #212121;
     color: #fff;
+
 }
 
 
@@ -182,11 +183,12 @@ nav a:hover::after {
 
 
 /* Main content styling starts from here  */
-main {
+main[class="aboutUs"] {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(179deg, rgba(0, 0, 0, 1) 9.2%, rgba(127, 16, 16, 1) 103.9%);
+    /* background-image: linear-gradient(179deg, rgba(0, 0, 0, 1) 9.2%, rgba(127, 16, 16, 1) 103.9%); */
     background-position: center;
+    background: transparent;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -235,6 +237,11 @@ section {
     /* gap: 2rem; */
     align-items: center;
     flex-direction: row;
+    background-image: url(/assets/img/topView-restuarant.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .mapInfoContainer {
@@ -403,32 +410,32 @@ form input {
 
 
 /* Offer section styles starts from here   */
-div[class="offerSection"] {
+section[class="offerSection"] {
     width: 100%;
-    height: 40vh;
-    background-color: #212121;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(/assets/img/topView-restuarant.jpg);
+    background-image: url(/assets/img/offersectionBackground.jpeg);
+    background-blend-mode: darken;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
-div[class="offerSection"] h4 {
-    background: linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
-    padding: 0.2rem 1.5rem;
-    font-size: 2rem;
+section[class="offerSection"] h4 {
+    font-size: 3.5rem;
     font-weight: 500;
     margin: 1rem 0;
     color: #000000;
+    text-shadow: 4px 10px 15px #ffffff;
     text-align: center;
+    font-family: 'Pacifico', cursive;
+
 }
 
-div[class="offerSection"] .offerBtnContainer {
+section[class="offerSection"] .offerBtnContainer {
     width: 50%;
     height: 100%;
     display: flex;
@@ -438,29 +445,26 @@ div[class="offerSection"] .offerBtnContainer {
     gap: 2rem;
 }
 
-
-
-/* Footer styling starts from here  */
-
-footer {
-    padding: 2rem 0;
-    width: auto;
-    height: auto;
-    display: flex;
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 0, 0, 0));
-    align-items: center;
+.offerBtnContainer button {
+    padding: 0.9rem 2rem;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 3px 4px;
+    background-color: #df1a42;
+    box-shadow: #c8ff00;
+    color: white;
 }
 
+.offerBtnContainer .strokeLine {
+    height: 50%;
+    width: 2px;
+    background-color: #000000;
+    opacity: 0.5;
 
-
-
-/* Gonna need to addd stripes behind the map to look cool styles here  */
-
-
-
-
-
-
+}
 
 
 
@@ -497,6 +501,8 @@ footer .foot-cols {
     margin-left: 1rem;
 }
 
+
+/* footer col 1 styling starts from here  */
 .foot-col-1 span {
     color: #45925b;
     text-decoration: wavy;
