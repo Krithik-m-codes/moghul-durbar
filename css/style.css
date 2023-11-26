@@ -186,9 +186,8 @@ nav a:hover::after {
 main[class="aboutUs"] {
     width: 100%;
     height: 100vh;
-    /* background-image: linear-gradient(179deg, rgba(0, 0, 0, 1) 9.2%, rgba(127, 16, 16, 1) 103.9%); */
     background-position: center;
-    background: transparent;
+    background: inherit;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -207,12 +206,137 @@ section {
 }
 
 
+
+/* Section licenses styles starts from here   */
+section[class="license"] {
+    height: 20vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.license-col-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+
+.license h3 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin: auto;
+    color: #000000;
+    text-align: center;
+}
+
+.license-col-2 img {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    width: 150px;
+    height: auto;
+    margin: 0 1rem;
+}
+
+.license-col-2 img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    /* transform: scale(1.1); */
+    filter: brightness(0.5);
+    filter: drop-shadow(0 0 0.5rem #fff);
+}
+
+.license .license-col-2 {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
 /* Section 2 styles */
 .section-2 {
     background-color: #74EBD5;
     background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 
 }
+
+/* Offer section styles starts from here   */
+section[class="offerSection"] {
+    width: 100%;
+    height: 26vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/assets/img/offersectionBackground.jpeg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section[class="offerSection"] h4 {
+    font-size: 3.5rem;
+    font-weight: 100 !important;
+    margin: 1rem 1rem;
+    color: #000000;
+    text-shadow: 0 10px 15px #b5b5b5;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    width: 100%;
+
+}
+
+.offerSection h4::before,
+.offerSection h4::after {
+    content: " ";
+    display: inline-block;
+    width: 10%;
+    height: 3px;
+    text-align: center;
+    background-color: #000000;
+    opacity: 0.8;
+    margin: 0 1.5rem;
+}
+
+section[class="offerSection"] .offerBtnContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.offerBtnContainer button {
+    padding: 0.9rem 3rem;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 350;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 4px 3px 4px rgb(21, 21, 21);
+    background-color: #df1a42;
+    color: #fff;
+}
+
+.offerBtnContainer .strokeLine {
+    height: 50%;
+    width: 2px;
+    background-color: #000000;
+    opacity: 0.5;
+
+}
+
+
 
 /* Section 3 styles starts from here  */
 .section-3 {
@@ -249,6 +373,19 @@ section {
     width: 50vw;
 }
 
+.mapInfoContainer button {
+    padding: 0.9rem 2rem;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 3px 4px #000000a9;
+    background-color: #df1a42;
+    box-shadow: #c8ff00;
+    color: white;
+}
+
 .mapContainer {
     margin-right: 4rem;
     width: 50%;
@@ -272,6 +409,7 @@ section {
     color: #fff;
 }
 
+
 .locationMapSection h3 span {
     background: linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
     color: rgb(0, 0, 0);
@@ -285,45 +423,115 @@ section {
 
 
 
-/* section 6 styling starts from here  */
+/* section 6 or Newsletter styling starts from here  */
 .newsletterContainer {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-color: rgb(69, 88, 146);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-image: url(/assets/svg/blob-scene-newsletter.svg);
+    background-image: url(../assets/img/svg-img/blob-scene-newsletter.svg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.newsletterContainer h2 {
-    background: linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
-    padding: 0.2rem 1.5rem;
-    font-size: 2rem;
-    font-weight: 500;
-    margin: 1rem 0;
-    color: #000000;
-    text-align: center;
-}
-
-.nl-col-1 {
-    width: 60vw;
-    /* padding: 0 4vw; */
+.nl-container {
+    width: 80%;
     height: 70vh;
-    margin-bottom: 2vw;
     display: flex;
-    background-color: rgb(248, 237, 234);
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    /* gap: 1rem; */
+    border-radius: 5%;
+    box-shadow: 1rem 1rem 4rem #000000a9;
 }
 
+
+.nl-inputContainer p {
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    color: #000000;
+}
+
+/* form styles start from here  */
+.nl-inputContainer form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-col-1 , .form-col-2 {
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+form[class="userSignUp"] label{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.form-col-1-1 , .form-col-1-2, .form-col-2-1 , .form-col-2-2{
+    flex-grow: 1;
+} 
+
+.form-col-1 input[type="text"] , input[type="email"] {
+    width: 90%;
+    margin-top: 0.5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: 1px 1px 2px #000000a9;
+}
+
+.form-col-2 select{
+    margin-top: 0.5rem;
+    width: 90%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: 1px 1px 2px #000000a9;
+}
+
+.form-col-2 button{
+    margin-top:0.5rem ;
+    width: 90%;
+    height: 3.1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: 1px 1px 2px #000000a9;
+    background-color: #df1a42;
+    box-shadow: #c8ff00;
+    color: white;
+
+}
+
+/* inputcontainer styles start from here  */
 .nl-inputContainer {
     width: 100%;
     height: 100%;
@@ -333,138 +541,30 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 3rem;
-    flex-grow: 1;
-}
-
-.nl-inputContainer h4 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin: 1rem 0;
-    color: #000000;
-    text-wrap: wrap;
-    text-align: left;
-    /* margin-left: 1.5rem; */
-}
-
-.nl-inputContainer form {
-    width: calc(100% - 4rem);
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.nl-inputContainer p {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: 1rem 0;
-    color: #000000;
-    text-wrap: wrap;
-    text-align: left;
-    /* margin-left: 1.5rem; */
-
-}
-
-/* Form newsletter container styles starts from here   */
-
-form input {
-    width: 90%;
-    text-align: center;
-    height: 3rem;
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-    border: none;
-    border-radius: 1em;
-}
-
-.nl-inputContainer button {
-    width: 100%;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    background-color: #D2042D;
-    font-size: 1.2rem;
-    font-weight: 500;
-    border: none;
-    border-radius: 1em;
+    flex-grow: 3;
+    border-radius: 5% 0 0 5%;
+    flex-wrap: nowrap;
 }
 
 
 .nl-imageContainer {
     height: 100%;
-    width: 100%;
+    width: 50%;
     background-color: #9FACE6;
     flex-grow: 1;
+    border-radius: 0 5% 5% 0;
 }
 
 .nl-imageContainer img {
     width: 100%;
     height: 100%;
+    border-radius: 0 5% 5% 0;
+    /* margin: 2vh 2vw; */
     object-fit: cover;
     object-position: center;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #000;
-
 }
 
 
-/* Offer section styles starts from here   */
-section[class="offerSection"] {
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(/assets/img/offersectionBackground.jpeg);
-    background-blend-mode: darken;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-section[class="offerSection"] h4 {
-    font-size: 3.5rem;
-    font-weight: 500;
-    margin: 1rem 0;
-    color: #000000;
-    text-shadow: 4px 10px 15px #ffffff;
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-
-}
-
-section[class="offerSection"] .offerBtnContainer {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    gap: 2rem;
-}
-
-.offerBtnContainer button {
-    padding: 0.9rem 2rem;
-    margin: auto;
-    font-size: 1.5rem;
-    font-weight: 500;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 4px 3px 4px;
-    background-color: #df1a42;
-    box-shadow: #c8ff00;
-    color: white;
-}
-
-.offerBtnContainer .strokeLine {
-    height: 50%;
-    width: 2px;
-    background-color: #000000;
-    opacity: 0.5;
-
-}
 
 
 

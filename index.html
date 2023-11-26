@@ -68,6 +68,22 @@
         <h2 style="text-align: left;">About Us</h2>
     </main>
 
+    <!-- This part contains code for the certificate / licenses  -->
+    <section class="license">
+        <div class="license-col-1">
+            <h3>Certified by </h3>
+            <span><img src="/assets/img/trademark.png" alt="trademark"
+                    style="width: 3rem; object-fit: contain; height: auto; margin: 2rem 0;"></span>
+            <p style="font-size: 2rem; color: black;">:</p>
+        </div>
+        <div class="license-col-2">
+            <img src="./assets/img/licenses-img/fssai_icon.svg" alt="food license ">
+            <img src="./assets/img/licenses-img/iso_9001_2015.png" alt="iso certificate 9001">
+            <img src="./assets/img/licenses-img/gov_in.png" alt="government_of_india_logo" style="width: 100px; height: auto; margin: 0 0.5rem;">
+            <img src="./assets/img/licenses-img/fire_and_safety.jpeg" style="width: 100px; height: auto; margin-left: 1rem;"
+                alt="fire_and_safety">
+        </div>
+    </section>
 
     <!-- This part contains the sections of the page. -->
     <section class="section section-2" id="section-2">
@@ -118,16 +134,44 @@
                 frameborder="0" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
         </div>
     </section>
+
+
     <!-- Newsletter section code starts from here  -->
     <section class="section newsletterContainer" id="section-6">
-        <h2>Subscribe to our Newsletter today!</h2>
-        <div class="nl-col-1">
-            <div class="nl-inputContainer">
-                <h4>Be the first to get exclusive <br> offers and latest meals</h4>
-                <form action="#">
-                    <p>Email Address : </p>
-                    <input type="email" placeholder="Enter your email address" required><br><br>
-                    <button type="submit">Subscribe</button>
+        <div class="nl-container">
+            <div class="nl-inputContainer" style="padding: 0 2rem;">
+                <h3 style="font-size: 2.2rem; text-align: left;font-weight: 600;
+                color: #000000; width: 100%; margin-top: 2rem;">Get your first meal for free!</h3>
+                <p class="nl-para">Healthy, tasty and nostalgic meals are just one sign-up away <br> Your first meal is on us!</p>
+                <form action="#" class="userSignUp">
+                    <div class="form-col-1">
+                        <div class="form-col-1-1">
+                            <label for="fullName">Full Name</label><br>
+                            <input type="text" name="fullName" id="fullName" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-col-1-2">
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="form-col-2">
+                        <div class="form-col-2-1">
+                            <label for="source">Where did you hear us from ?</label><br>
+                            <select name="source" id="source">
+                                <option value="choose">Please choose one option </option>
+                                <option value="google">Google</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="twitter">Twitter</option>
+                                <option value="linkedin">Linkedin</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-col-2-2">
+                            <label for="doIt">let's sign you up ^_~</label><br>
+                            <button type="button" >Sign up Now</button>
+                        </div>
+                    </div>
                 </form>
             </div>
             <div class="nl-imageContainer">
@@ -135,7 +179,6 @@
             </div>
         </div>
     </section>
-
 
 
     <!-- Footer Section of the page -->
