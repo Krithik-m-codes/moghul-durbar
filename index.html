@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Including cdn for fonts and icons as well as scripting scripts  -->
-    <link rel="stylesheet" href="/css/cssResest.css">
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-    <link rel="stylesheet" href="/css/queries.css">
+    <link rel="stylesheet" href="/styles/cssResest.css">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+    <link rel="stylesheet" href="/styles/queries.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
@@ -65,7 +65,21 @@
 
     <!-- This part contains the main body of the page. -->
     <main class="aboutUs">
-        <h2 style="text-align: left;">About Us</h2>
+        <div class="aboutUs-col-1">
+            <div class="headerContainer">
+                <h2>About Us</h2>
+            </div>
+            <div class="contentContainer">
+                <p> Since 1969, Moghul Durbar has been a cherished destination for authentic South Indian cuisine.
+                    Nestled in a historic setting, our restaurant is a celebration of the rich flavors and culinary
+                    traditions of the region. With a commitment to quality and a passion for South Indian gastronomy, we
+                    invite you to savor the essence of tradition in every bite. Join us on a journey where history meets
+                    flavor, and indulge in the timeless charm of Moghul Durbar. </p>
+            </div>
+        </div>
+        <div class="aboutUs-col-2">
+            <img src="/assets/img/backgrounds/aboutUs-background.png" alt="about us image">
+        </div>
     </main>
 
     <!-- This part contains code for the certificate / licenses  -->
@@ -79,9 +93,10 @@
         <div class="license-col-2">
             <img src="./assets/img/licenses-img/fssai_icon.svg" alt="food license ">
             <img src="./assets/img/licenses-img/iso_9001_2015.png" alt="iso certificate 9001">
-            <img src="./assets/img/licenses-img/gov_in.png" alt="government_of_india_logo" style="width: 100px; height: auto; margin: 0 0.5rem;">
-            <img src="./assets/img/licenses-img/fire_and_safety.jpeg" style="width: 100px; height: auto; margin-left: 1rem;"
-                alt="fire_and_safety">
+            <img src="./assets/img/licenses-img/gov_in.png" alt="government_of_india_logo"
+                style="width: 100px; height: auto; margin: 0 0.5rem;">
+            <img src="./assets/img/licenses-img/fire_and_safety.jpeg"
+                style="width: 100px; height: auto; margin-left: 1rem;" alt="fire_and_safety">
         </div>
     </section>
 
@@ -115,20 +130,22 @@
     <!-- This section contains code for the location of the restaurant and integration of MaP -->
     <section class="section locationMapSection" id="locationMapSection">
         <div class="mapInfoContainer">
-            <h3>Foodie bears <span>Hibernate</span> here 😯</h3>
-            <div class="lms-col-1-1">
-                <h4>Locate me here</h4>
-                <br>
-                <p>Address: 1st Floor, 1st Main Rd,<br> 7th Block, Koramangala, <br>Bengaluru, Karnataka 560095</p>
-            </div>
-            <div class="lms-col-1-2">
-                <button type="button">Take me there !</button>
-            </div>
+           <div class="contentContainer">
+             <h3>Foodie bears <span>Hibernate</span> here 😯</h3>
+             <div class="lms-col-1-1">
+                 <h4>Locate me here</h4>
+                 <br>
+                 <p>Address: 1st Floor, 1st Main Rd,<br> 7th Block, Koramangala, <br>Bengaluru, Karnataka 560095</p>
+             </div>
+             <div class="lms-col-1-2">
+                 <button type="button">Take me there !</button>
+             </div>
+           </div>
         </div>
         <div class="mapContainer">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675.1921337346998!2d77.59552020194246!3d12.928656451291246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15a840000001%3A0xa2fa821589696196!2sMoghul%20Durbar!5e0!3m2!1sen!2sin!4v1700758679049!5m2!1sen!2sin"
-                width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" frameborder="0"></iframe>
+                style="border:0;" loading="lazy" frameborder="0"></iframe>
             <!-- <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.740742821737!2d77.5943563148229!3d12.9715989908621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!"
                 frameborder="0" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
@@ -142,7 +159,8 @@
             <div class="nl-inputContainer" style="padding: 0 2rem;">
                 <h3 style="font-size: 2.2rem; text-align: left;font-weight: 600;
                 color: #000000; width: 100%; margin-top: 2rem;">Get your first meal for free!</h3>
-                <p class="nl-para">Healthy, tasty and nostalgic meals are just one sign-up away <br> Your first meal is on us!</p>
+                <p class="nl-para">Healthy, tasty and nostalgic meals are just one sign-up away <br> Your first meal is
+                    on us!</p>
                 <form action="#" class="userSignUp">
                     <div class="form-col-1">
                         <div class="form-col-1-1">
@@ -169,13 +187,13 @@
                         </div>
                         <div class="form-col-2-2">
                             <label for="doIt">let's sign you up ^_~</label><br>
-                            <button type="button" >Sign up Now</button>
+                            <button type="button">Sign up Now</button>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="nl-imageContainer">
-                <img src="./assets/img/newsletter.jpg" alt="newsletter image">
+                <img src="./assets/img/backgrounds/newsletter.jpg" alt="newsletter image">
             </div>
         </div>
     </section>
@@ -259,5 +277,6 @@
 <!-- Including cdn for fonts and icons as well as scripting scripts  -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="/script.js" defer></script>
 
 </html>
