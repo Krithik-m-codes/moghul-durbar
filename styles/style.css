@@ -118,7 +118,8 @@ header .head-col-1 img {
 nav a {
     text-decoration: none;
     color: #fff;
-    /* font-size: 1.5rem; */
+    
+    font-size: 1.2rem;
     font-weight: 500;
     margin: auto 1rem;
     transition: all 0.3s ease;
@@ -204,12 +205,6 @@ nav a:hover::after {
     margin: 0 auto;
 }
 
-
-
-
-
-
-
 /* Main content styling starts from here  */
 main[class="aboutUs"] {
     background-color: #835022;
@@ -264,9 +259,6 @@ main .aboutUs-col-1 h2 {
     margin: 1rem 0;
     color: #000000;
 }
-
-
-
 
 main .aboutUs-col-1 p {
     font-size: 1.3rem;
@@ -368,6 +360,9 @@ section[class="license"] {
 
 }
 
+
+
+
 /* Offer section styles starts from here   */
 section[class="offerSection"] {
     width: 100%;
@@ -378,22 +373,47 @@ section[class="offerSection"] {
     flex-direction: column;
     background-image: url(/assets/img/backgrounds/offersectionBackground.jpeg);
     background-blend-mode: darken;
+    /* mix-blend-mode: darken; */
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    position: relative;
+}
+
+.offerSection img[id="left-side-img"] {
+    width: 200px;
+    height: auto;
+    opacity: 1;
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    z-index: 1;
+
+}
+
+.offerSection img[id="right-side-img"] {
+    width: 200px;
+    height: auto;
+    opacity: 1;
+    position: absolute;
+    top: 1%;
+    right: 10%;
+    z-index: 1;
 }
 
 section[class="offerSection"] h4 {
     font-size: 3.5rem;
-    font-weight: 100 !important;
+    font-weight: 700 !important;
     margin: 1rem 1rem;
     color: #000000;
     text-shadow: 0 10px 15px #b5b5b5;
     text-align: center;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Times New Roman', Times, serif;
     width: 100%;
 
 }
+
+
 
 .offerSection h4::before,
 .offerSection h4::after {
@@ -469,13 +489,13 @@ section[class="offerSection"] .offerBtnContainer {
 }
 
 .mapInfoContainer {
-    padding: 1rem 2rem 0 0 ; 
+    padding: 1rem 2rem 0 0;
     width: 50vw;
     /* flex-grow:1 ; */
 }
 
 
-.mapInfoContainer .contentContainer{
+.mapInfoContainer .contentContainer {
     padding-left: 3rem;
 }
 
@@ -575,7 +595,7 @@ section[class="offerSection"] .offerBtnContainer {
     font-size: 1.3rem;
     text-align: left;
     font-weight: 300;
-    margin-bottom: 3rem;
+    margin: 1rem 0 3rem 0;
     color: #000000;
 }
 
@@ -665,7 +685,7 @@ input[type="email"] {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
+    /* gap: 3rem; */
     flex-grow: 3;
     border-radius: 5% 0 0 5%;
     flex-wrap: nowrap;
