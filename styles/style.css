@@ -118,7 +118,7 @@ header .head-col-1 img {
 nav a {
     text-decoration: none;
     color: #fff;
-    
+
     font-size: 1.2rem;
     font-weight: 500;
     margin: auto 1rem;
@@ -456,6 +456,88 @@ section[class="offerSection"] .offerBtnContainer {
     opacity: 0.5;
 
 }
+
+/* Offer section styles ends here   */
+
+
+/* ParallexGallery styles start from here  */
+section[class="parallexGallery"] {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/assets/img/backgrounds/parallexGalleryBackground.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.parallexGallery-col-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+}
+
+
+.parallexGallery-col-2 {
+    margin: 2rem 5rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* margin: 0 2rem; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: auto;
+    gap: 2rem;
+}
+
+.parallexGallery-col-1 h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.parallexGallery-col-2 img {
+    width: 250px;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.parallexGallery-col-2 img:first-child {
+    margin-left: 10px;
+}
+
+.parallexGallery-col-2::-webkit-scrollbar {
+    width: 3px;
+    display: block;
+    overflow-x: hidden;
+    scrollbar-gutter: auto;
+}
+
+.parallexGallery-col-2::-webkit-scrollbar-track {
+    background-color: #212121;
+    width: 5px;
+    height: 2px;
+    border-radius: 3px;
+
+}
+
+.parallexGallery-col-2::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 3px;
+
+}
+
+
 
 
 
