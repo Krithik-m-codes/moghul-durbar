@@ -1,0 +1,39 @@
+*{
+  padding: 1vw;
+  margin: 1.5vw;
+  box-sizing: border-box;
+  background-color: beige;
+  
+}
+
+h1{
+  text-align:top-left;
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  border: solid 5px black;
+  border-radius: 15px;
+  width: 40%;
+}
+
+h2{
+  text-align: left;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+ 
+}
+
+div{
+  font-size: 1.8rem;
+  font-style: bold;
+  border: solid 5px black;
+  width: 50%;
+  line-height: 1em;
+
+}
+
+body{
+  border:solid 10px black;
+}
+
+div2
+{}
