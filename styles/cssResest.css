@@ -20,5 +20,14 @@ body {
     font-size: 1.1rem;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow: auto;
+    scrollbar-width: none;
 
 }
+
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+

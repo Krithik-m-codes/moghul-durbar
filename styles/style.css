@@ -1,9 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Marhey&family=Pacifico&display=swap');
+
 body {
     background-color: #212121;
     color: #fff;
 
 }
 
+body::-webkit-scrollbar {
+    width: 0.7vw;
+    display: block;
+    overflow-x: hidden;
+    scrollbar-gutter: auto;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #212121;
+    width: 0.9vw;
+    border-radius: 10px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: yellowgreen;
+
+}
+
+/* Header styles starts from here  */
 
 header {
     height: 10vh;
@@ -54,7 +82,7 @@ header .navigation {
     flex-direction: column;
 } */
 
-/* End of mobile     menu page menu bar styles */
+/* End of mobile  menu page menu bar styles */
 
 
 
@@ -90,7 +118,8 @@ header .head-col-1 img {
 nav a {
     text-decoration: none;
     color: #fff;
-    /* font-size: 1.5rem; */
+
+    font-size: 1.2rem;
     font-weight: 500;
     margin: auto 1rem;
     transition: all 0.3s ease;
@@ -130,7 +159,7 @@ nav a:hover::after {
 /* Hero section styles starts from here  */
 
 .hero-section {
-    height: calc(100vh - 10vh);
+    height: 100vh;
     background-color: rgb(70, 67, 64);
     font-size: 1.5rem;
     padding-top: 10vh;
@@ -138,7 +167,7 @@ nav a:hover::after {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(../assets/img/hero-background.jpeg);
+    background-image: url(../assets/img/backgrounds/hero-background.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -176,24 +205,88 @@ nav a:hover::after {
     margin: 0 auto;
 }
 
-
-
-
-
-
-
 /* Main content styling starts from here  */
 main[class="aboutUs"] {
+    background-color: #835022;
     width: 100%;
     height: 100vh;
-    background-position: center;
-    background: inherit;
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
 }
+
+main .aboutUs-col-1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 2rem;
+    gap: 2rem;
+    flex-grow: 1;
+}
+
+
+main .contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* gap: 2rem; */
+}
+
+main .headerContainer {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+main .aboutUs-col-1 h2 {
+    font-size: 4rem;
+    text-align: left;
+    background-color: #b5b5b5;
+    padding: 0.5rem 1rem;
+    /* font-family: 'Open sans', cursive; */
+    font-family: 'Ephesis', cursive;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: #000000;
+}
+
+main .aboutUs-col-1 p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 1rem 0;
+    margin-right: 1rem;
+    color: #fff;
+    text-wrap: balance;
+}
+
+main .aboutUs-col-2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+main .aboutUs-col-2 img {
+    width: 100%;
+    height: 80%;
+    margin: 0 1rem 0;
+    object-fit: cover;
+    /* align-self: right; */
+    object-position: center;
+}
+
 
 
 /* basic Section styles for all sections start from here  */
@@ -267,6 +360,9 @@ section[class="license"] {
 
 }
 
+
+
+
 /* Offer section styles starts from here   */
 section[class="offerSection"] {
     width: 100%;
@@ -275,24 +371,49 @@ section[class="offerSection"] {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(/assets/img/offersectionBackground.jpeg);
+    background-image: url(/assets/img/backgrounds/offersectionBackground.jpeg);
     background-blend-mode: darken;
+    /* mix-blend-mode: darken; */
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    position: relative;
+}
+
+.offerSection img[id="left-side-img"] {
+    width: 200px;
+    height: auto;
+    opacity: 1;
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    z-index: 1;
+
+}
+
+.offerSection img[id="right-side-img"] {
+    width: 200px;
+    height: auto;
+    opacity: 1;
+    position: absolute;
+    top: 1%;
+    right: 10%;
+    z-index: 1;
 }
 
 section[class="offerSection"] h4 {
     font-size: 3.5rem;
-    font-weight: 100 !important;
+    font-weight: 700 !important;
     margin: 1rem 1rem;
     color: #000000;
     text-shadow: 0 10px 15px #b5b5b5;
     text-align: center;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Times New Roman', Times, serif;
     width: 100%;
 
 }
+
+
 
 .offerSection h4::before,
 .offerSection h4::after {
@@ -336,6 +457,88 @@ section[class="offerSection"] .offerBtnContainer {
 
 }
 
+/* Offer section styles ends here   */
+
+
+/* ParallexGallery styles start from here  */
+section[class="parallexGallery"] {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/assets/img/backgrounds/parallexGalleryBackground.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.parallexGallery-col-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+}
+
+
+.parallexGallery-col-2 {
+    margin: 2rem 5rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* margin: 0 2rem; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: auto;
+    gap: 2rem;
+}
+
+.parallexGallery-col-1 h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.parallexGallery-col-2 img {
+    width: 250px;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.parallexGallery-col-2 img:first-child {
+    margin-left: 10px;
+}
+
+.parallexGallery-col-2::-webkit-scrollbar {
+    width: 3px;
+    display: block;
+    overflow-x: hidden;
+    scrollbar-gutter: auto;
+}
+
+.parallexGallery-col-2::-webkit-scrollbar-track {
+    background-color: #212121;
+    width: 5px;
+    height: 2px;
+    border-radius: 3px;
+
+}
+
+.parallexGallery-col-2::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 3px;
+
+}
+
+
+
 
 
 /* Section 3 styles starts from here  */
@@ -358,10 +561,9 @@ section[class="offerSection"] .offerBtnContainer {
     background-color: #212121;
     display: flex;
     justify-content: center;
-    /* gap: 2rem; */
     align-items: center;
     flex-direction: row;
-    background-image: url(/assets/img/topView-restuarant.jpg);
+    background-image: url(/assets/img/backgrounds/topView-restuarant.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -369,8 +571,14 @@ section[class="offerSection"] .offerBtnContainer {
 }
 
 .mapInfoContainer {
-    padding: 1rem 0 0 2rem;
+    padding: 1rem 2rem 0 0;
     width: 50vw;
+    /* flex-grow:1 ; */
+}
+
+
+.mapInfoContainer .contentContainer {
+    padding-left: 3rem;
 }
 
 .mapInfoContainer button {
@@ -387,12 +595,26 @@ section[class="offerSection"] .offerBtnContainer {
 }
 
 .mapContainer {
-    margin-right: 4rem;
+    margin-right: 3rem;
     width: 50%;
     height: 60vh;
     overflow: hidden;
-    box-shadow: 5rem 5rem 40rem #000000a9;
     border-radius: 1px;
+    /* flex-grow:1 ; */
+
+}
+
+.mapContainer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 1px;
+    box-shadow: 2rem 2rem 4rem #000000a9;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border-radius: 1px;
+
 }
 
 .locationMapSection h3 {
@@ -455,7 +677,7 @@ section[class="offerSection"] .offerBtnContainer {
     font-size: 1.3rem;
     text-align: left;
     font-weight: 300;
-    margin-bottom: 3rem;
+    margin: 1rem 0 3rem 0;
     color: #000000;
 }
 
@@ -470,7 +692,8 @@ section[class="offerSection"] .offerBtnContainer {
     gap: 2rem;
 }
 
-.form-col-1 , .form-col-2 {
+.form-col-1,
+.form-col-2 {
     flex-grow: 1;
     width: 100%;
     height: auto;
@@ -480,18 +703,22 @@ section[class="offerSection"] .offerBtnContainer {
     flex-direction: row;
 }
 
-form[class="userSignUp"] label{
+form[class="userSignUp"] label {
     margin-bottom: 2rem;
     font-size: 1.2rem;
     font-weight: 500;
     color: #000000;
 }
 
-.form-col-1-1 , .form-col-1-2, .form-col-2-1 , .form-col-2-2{
+.form-col-1-1,
+.form-col-1-2,
+.form-col-2-1,
+.form-col-2-2 {
     flex-grow: 1;
-} 
+}
 
-.form-col-1 input[type="text"] , input[type="email"] {
+.form-col-1 input[type="text"],
+input[type="email"] {
     width: 90%;
     margin-top: 0.5rem;
     height: 2rem;
@@ -503,7 +730,7 @@ form[class="userSignUp"] label{
     box-shadow: 1px 1px 2px #000000a9;
 }
 
-.form-col-2 select{
+.form-col-2 select {
     margin-top: 0.5rem;
     width: 90%;
     height: 3rem;
@@ -515,8 +742,8 @@ form[class="userSignUp"] label{
     box-shadow: 1px 1px 2px #000000a9;
 }
 
-.form-col-2 button{
-    margin-top:0.5rem ;
+.form-col-2 button {
+    margin-top: 0.5rem;
     width: 90%;
     height: 3.1rem;
     border: none;
@@ -540,7 +767,7 @@ form[class="userSignUp"] label{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
+    /* gap: 3rem; */
     flex-grow: 3;
     border-radius: 5% 0 0 5%;
     flex-wrap: nowrap;

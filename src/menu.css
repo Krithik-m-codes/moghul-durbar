@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+    
+}
+
+h1{
+  text-align:left;
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2{
+  text-align: left;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+ 
+}
+
+main{
+  display: grid;
+  place-content: center;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+  grid-row-gap: 1.2rem;
+  grid-column-gap: 1.2rem;
+  margin: 1em;
+  padding: 2vw;
+  border: solid 2px black;
+  border-radius: 15px;
+  width: 95%;
+  height: auto;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-style: bold;
+  line-height: 1em;
+  text-align: center;
+  
+}
+
+main div{
+  background-color: aquamarine;
+  width: 100%;
+  height: auto;
+  font-size: 1.8rem;
+  font-style: bold;
+  border: solid 2px black;
+}
+
+body{
+  padding: 1vw;
+}
+
+.class-circle{
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex-box ;
+  float:right ;
