@@ -207,7 +207,8 @@ nav a:hover::after {
 
 /* Main content styling starts from here  */
 main[class="aboutUs"] {
-    background-color: #835022;
+    /* background-color: #835022; */
+    background-color: #897A5E;
     width: 100%;
     height: 100vh;
     flex-direction: row;
@@ -305,9 +306,10 @@ section[class="license"] {
     height: 20vh;
     background-color: whitesmoke;
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     flex-direction: row;
+    overflow: hidden;
     gap: 4rem;
 }
 
@@ -333,7 +335,7 @@ section[class="license"] {
     opacity: 0.5;
     width: 150px;
     height: auto;
-    margin: 0 1rem;
+    margin: auto;
 }
 
 .license-col-2 img:hover {
@@ -468,11 +470,7 @@ section[class="parallexGallery"] {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(/assets/img/backgrounds/parallexGalleryBackground.jpeg);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 .parallexGallery-col-1 {
@@ -487,17 +485,19 @@ section[class="parallexGallery"] {
 
 
 .parallexGallery-col-2 {
-    margin: 2rem 5rem;
-    width: 100%;
+    margin: 2rem 0;
+    width: 96%;
     height: auto;
+    padding: 3rem 0;
+    /* background-color: #45925b; */
     display: flex;
-    /* margin: 0 2rem; */
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
-    flex-direction: row;
     flex-wrap: nowrap;
-    overflow: auto;
-    gap: 2rem;
+    overflow-x:auto;
+    gap: 1rem;
+    /* display: none; */
+    
 }
 
 .parallexGallery-col-1 h2{
@@ -507,17 +507,24 @@ section[class="parallexGallery"] {
 }
 
 .parallexGallery-col-2 img {
-    width: 250px;
+    width: 229px;
     height: auto;
-    object-fit: scale-down;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    margin: 0 0.5rem 0;
+    transition: all 0.5s ease;
+
 }
 
-.parallexGallery-col-2 img:first-child {
+/* .parallexGallery-col-2 img:first-child {
     margin-left: 10px;
-}
+    filter: brightness(0.5);
+} */
 
 .parallexGallery-col-2::-webkit-scrollbar {
     width: 3px;
+    height: 3px;
     display: block;
     overflow-x: hidden;
     scrollbar-gutter: auto;
@@ -525,15 +532,16 @@ section[class="parallexGallery"] {
 
 .parallexGallery-col-2::-webkit-scrollbar-track {
     background-color: #212121;
-    width: 5px;
-    height: 2px;
+    width: 3px;
     border-radius: 3px;
 
 }
 
 .parallexGallery-col-2::-webkit-scrollbar-thumb {
-    background-color: #fff;
-    border-radius: 3px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    /* height: 1px; */
+
 
 }
 
