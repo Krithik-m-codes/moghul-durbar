@@ -1,7 +1,11 @@
 {
     "liveServer.settings.port": 5501,
     "cSpell.words": [
+<<<<<<< HEAD
+        "Koramangala",
+=======
         "Ephesis",
+>>>>>>> e4bac05cacc3dcbd016bcdeab4704d8349246b02
         "Krithik"
     ],
     "cSpell.ignoreWords": [
