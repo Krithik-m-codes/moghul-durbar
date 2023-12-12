@@ -1,60 +1,96 @@
-*{
-  font-size: 1.2rem;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-    
 }
 
-h1{
-  text-align:left;
-  font-size: 2.5rem;
+body {
   font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+
 }
 
-h2{
-  text-align: left;
-  font-size: 2rem;
-  font-family: 'Roboto', sans-serif;
- 
-}
-
-main{
-  display: grid;
-  place-content: center;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr;
-  grid-row-gap: 1.2rem;
-  grid-column-gap: 1.2rem;
-  margin: 1em;
-  padding: 2vw;
-  border: solid 2px black;
-  border-radius: 15px;
-  width: 95%;
-  height: auto;
-  background-color: white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
-  font-style: bold;
-  line-height: 1em;
-  text-align: center;
-  
-}
-
-main div{
-  background-color: aquamarine;
+header{
   width: 100%;
+  height: 20vh;
+  filter: blur(0.5rem);
+
+}
+
+main {
+  background-color: rgb(255, 243, 224);
+  display: flex;
+  margin: auto;
+  margin-bottom: 5rem;
+  padding: 3rem 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: auto;
-  font-size: 1.8rem;
-  font-style: bold;
-  border: solid 2px black;
+  width: 80%;
+  gap: 3rem;
+  position: relative;
+  border-radius: 2rem;
+  border: 1px solid #80ff00;
 }
 
-body{
-  padding: 1vw;
+.menu-cols{
+  width: 80%;
+  align-self: flex-start;
 }
 
-.class-circle{
-  border-radius: 50%;
-  font-size: 1.2rem;
-  display: flex-box ;
-  float:right ;
+aside{
+  width: 30%;
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  height: 100%;
+  z-index: 2;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
 }
+
+
+aside img[id="thalli-img"]{
+  height:50%;
+  width: auto;
+}
+
+.menu-col{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  border: #80ff00 1px solid;
+
+}
+
+.menu-header h1 {
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-family: 'Ephesis', cursive;
+
+}
+
+
+.recommended-section{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  height: 20dvh;
+  align-self: flex-start;
+
+}
+
+
+
+
