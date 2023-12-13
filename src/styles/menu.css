@@ -91,6 +91,11 @@ aside img[id="thalli-img"]{
 
 }
 
+ul{
+  list-style-type: none;
+  padding: auto;
+  margin: auto;
+}
 
 
 
