@@ -671,13 +671,35 @@ section[class="parallexGallery"] {
 
 /* Section 3 styles starts from here  */
 .section-3 {
-    background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
+    /* background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%); */
+ background-image: linear-gradient(rgba(5,8,5,2)10.9%,rgba(90,56,11,78)89.1%);
+
+
+
 
 }
-
+.section-3 div h2{
+    align-items: center;
+    text-decoration: dotted;
+    margin:1.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    text-decoration: solid green  ;
+    
+}
+.section-3 div p{
+    align-items: center;
+    height: 10%;
+    left: 0%;
+    color: #45925b;
+    font-size: 1.5rem;
+}
 /* Section 4 styles starts from here  */
 .section-4 {
-    background-image: radial-gradient(circle farthest-corner at 32.7% 82.7%, rgba(173, 0, 171, 1) 8.3%, rgba(15, 51, 92, 1) 79.4%);
+    /* background-image: radial-gradient(circle farthest-corner at 32.7% 82.7%, rgba(173, 0, 171, 1) 8.3%, rgba(15, 51, 92, 1) 79.4%); */
+    background-image: linear-gradient(rgba(8,5,4,8)10.9%,rgba(23,36,78,56)89.1%);
 }
 
 
