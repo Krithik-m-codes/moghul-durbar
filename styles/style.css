@@ -180,7 +180,7 @@ nav a:hover::after {
     transition: all 0.5s ease;
 }
 
-.hero-col-2 button:active{
+.hero-col-2 button:active {
     transform: scale(1.1);
     filter: brightness(0.3);
     opacity: 0.7;
@@ -415,27 +415,31 @@ section[class="catering"] {
 
 
 
-.catering-col-1 h3{
+/* .catering-col-1 h3 {
     font-size: 2.6rem;
     font-weight: 550;
     margin: auto;
     color: #ffffff;
     padding: auto;
     text-align: center;
-}
+} */
 
-.catering-col-1 a{
+.catering-col-1 a {
+    font-family: 'Ephesis', cursive;
+    font-size: 2.5rem;
+    font-weight: 500;
     text-decoration: none;
     color: #ffffff;
     padding: auto;
     text-align: center;
-    
+
 }
 
 .catering-col-1 p {
     font-size: 1.3rem;
     font-weight: 300;
     bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
     left: 0;
     opacity: 0;
     color: #fff;
@@ -449,7 +453,6 @@ section[class="catering"] {
     max-height: auto;
     padding: 1.1rem 0;
     background-color: #0000002f;
-
 
 }
 
@@ -476,6 +479,8 @@ section[class="offerSection"] {
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+    display: none;
+
 }
 
 .offerSection img[id="left-side-img"] {
@@ -670,10 +675,98 @@ section[class="parallexGallery"] {
 
 
 /* Section 3 styles starts from here  */
+/* Styles for testimonials starts from here :  */
 .section-3 {
     background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
 
 }
+
+section[class="testimonials"] {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.testimonials-container {
+    overflow: hidden;
+    position: relative;
+    height: 60%;
+}
+
+.testimonials-wrapper {
+    display: flex;
+    width: 300%;
+    /* 100% for each testimonial */
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+ section[class="testimonials"] .navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+section[class="testimonials"] .nav-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: auto;
+}
+
+
+section[class="testimonials"] .nav-button:active{
+    background-color: #696969;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Section 4 styles starts from here  */
 .section-4 {
