@@ -7,7 +7,6 @@ function showTestimonial(index) {
     const testimonialsWrapper = document.querySelector('.testimonials-wrapper');
     const testimonialWidth = document.querySelector('.testimonial').offsetWidth;
     currentIndex = index;
-
     testimonialsWrapper.style.transform = `translateX(-${currentIndex * testimonialWidth}px)`;
 }
 

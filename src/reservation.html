@@ -4,8 +4,21 @@
     <title>Reservation</title>
     <style>
         /* Styles for forms and inputs */
-        form {
-            margin-bottom: 20px;
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #1f1f1f;
+        }
+
+        main {
+            width: 100%;
+            padding: 2rem 4rem;
+            background-color:#ccc ;
+            border-radius: 1rem;
+
         }
 
         label {
@@ -19,7 +32,7 @@
         input[type="date"],
         input[type="time"],
         textarea {
-            width: 100%;
+            width:60%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
@@ -42,27 +55,30 @@
     </style>
 </head>
 <body>
-    <h1>Reservation</h1>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <main>
+        <h1>Reservation</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required>
-
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required>
-
-        <label for="time">Time:</label>
-        <input type="time" id="time" name="time" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <input type="submit" value="Reserve">
-    </form>
+            <input type="submit" value="Reserve">
+        </form>
+    </main>
 </body>
 </html>
