@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="/styles/style.css" type="text/css">
     <link rel="stylesheet" href="/styles/queries.css">
 
+    <!-- swiffy slider css and scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 
@@ -71,11 +77,16 @@
                 <h2>About Us</h2>
             </div>
             <div class="contentContainer">
-                <p> Since 1969, Moghul Durbar has been a cherished destination for authentic South Indian cuisine.
-                    Nestled in a historic setting, our restaurant is a celebration of the rich flavors and culinary
-                    traditions of the region. With a commitment to quality and a passion for South Indian gastronomy, we
-                    invite you to savor the essence of tradition in every bite. Join us on a journey where history meets
-                    flavor, and indulge in the timeless charm of Moghul Durbar. </p>
+                <p> Since 1969, Moghul Durbar has been a cherished
+                    destination for authentic South Indian cuisine.
+                    Nestled in a historic setting, our restaurant is a
+                    celebration of the rich flavors and culinary
+                    traditions of the region. With a commitment to quality
+                    and a passion for South Indian gastronomy, we
+                    invite you to savor the essence of tradition in every
+                    bite. Join us on a journey where history meets
+                    flavor, and indulge in the timeless charm of Moghul
+                    Durbar. </p>
             </div>
         </div>
         <div class="aboutUs-col-2">
@@ -107,7 +118,8 @@
         <div class="catering-col-1">
             <div class="catering-col-1-cols">
                 <h3> <a href="/src/menu.html" target="_blank" rel="noopener noreferrer">Menu</a></h3>
-                <p>A Collection of cuisine's<br>cooked for perfection by us 😍 &#9829;</p>
+                <p>A Collection of cuisine's<br>cooked for perfection by us
+                    😍 &#9829;</p>
             </div>
             <div class="catering-col-1-cols">
                 <h3> <a href="/src/reservation.html" target="_blank" rel="noopener noreferrer">Reservation</a></h3>
@@ -115,7 +127,8 @@
             </div>
             <div class="catering-col-1-cols">
                 <h3> <a href="/src/specials.html" target="_blank" rel="noopener noreferrer">Events and Specials</a></h3>
-                <p>Beyond the Plate:<br>Explore Unforgettable Savory Specials :&#40;</p>
+                <p>Beyond the Plate:<br>Explore Unforgettable Savory
+                    Specials :&#40;</p>
             </div>
         </div>
     </section>
@@ -132,7 +145,6 @@
         </div>
         <img src="/assets/img/20_off_percent_offerimg.png" alt="20% offer img" id="right-side-img">
     </section>
-
 
     <section class="parallexGallery">
         <div class="parallexGallery-col-1">
@@ -193,65 +205,100 @@
 
     <!-- Section 3 of the page starts from here  -->
     <section class="testimonials" id="section-3">
-        <h3>Testimonials : </h3>
-        <div class="testimonials-container">
-            <div class="testimonials-wrapper">
-                <!-- Testimonial 1 -->
-                <div class="testimonial">
-                    <img src="https://images.pexels.com/photos/774091/pexels-photo-774091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="User 1">
-                    <p>"Great food and amazing service! I'll definitely be back."</p>
-                    <p><strong>John Doe</strong></p>
+        <div class="swiffy-slider">
+            <!-- <ul class="slider-container">
+                <li><img src="https://source.unsplash.com/49b9l_29ceA/1600x900"></li>
+                <li><img src="https://source.unsplash.com/nKAglN6HBH8/1600x900"></li>
+                <li><img src="https://source.unsplash.com/E9ZwWcMGzj8/1600x900"></li>
+                <li><img src="https://source.unsplash.com/49b9l_29ceA/1600x900"></li>
+                <li><img src="https://source.unsplash.com/nKAglN6HBH8/1600x900"></li>
+                <li><img src="https://source.unsplash.com/E9ZwWcMGzj8/1600x900"></li>
+                <li><img src="https://source.unsplash.com/49b9l_29ceA/1600x900"></li>
+                <li><img src="https://source.unsplash.com/nKAglN6HBH8/1600x900"></li>
+                <li><img src="https://source.unsplash.com/E9ZwWcMGzj8/1600x900"></li>
+            </ul> -->
+            <div class="slider-container">
+                <div class="slides slide_1">
+                    <div class="review-card">
+                        <div class="stars">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="quote">"Amazing food and great service!"</p>
+                    </div>
                 </div>
-
-                <!-- Testimonial 2 -->
-                <div class="testimonial">
-                    <img src="https://images.pexels.com/photos/1054251/pexels-photo-1054251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="User 2">
-                    <p>"The ambiance is fantastic, and the dishes are a delight to the taste buds."</p>
-                    <p><strong>Jane Smith</strong></p>
+                <div class="slides slide_2">
+                    <div class="review-card">
+                        <div class="stars">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="quote">"Delicious dishes and friendly staff."</p>
+                    </div>
                 </div>
-
-                <!-- Testimonial 3-->
-                <div class="testimonial">
-                    <img src="https://images.pexels.com/photos/3775087/pexels-photo-3775087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="User 3">
-                    <p>"The ambiance is fantastic, and the dishes are a delight to the taste buds."</p>
-                    <p><strong>Jane Smith</strong></p>
+                <div class="slides slide_3">
+                    <div class="review-card">
+                        <div class="stars">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="quote">"The food here is top-notch!"</p>
+                    </div>
                 </div>
-
-                <!-- Testimonial 4-->
-                <div class="testimonial">
-                    <img src="https://images.pexels.com/photos/4917824/pexels-photo-4917824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="User 4">
-                    <p>"The ambiance is fantastic, and the dishes are a delight to the taste buds."</p>
-                    <p><strong>Jane Smith</strong></p>
+                <div class="slides slide_4">
+                    <div class="review-card">
+                        <div class="stars">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="quote">"Good food at reasonable prices."</p>
+                    </div>
                 </div>
-
-                <!-- Testimonial 5-->
-                <div class="testimonial">
-                    <img src="https://images.pexels.com/photos/678783/pexels-photo-678783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="User 5">
-                    <p>"The ambiance is fantastic, and the dishes are a delight to the taste buds."</p>
-                    <p><strong>Jane Smith</strong></p>
+                <div class="slides slide_5">
+                    <div class="review-card">
+                        <div class="stars">
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="quote">"Nice ambiance and tasty food."</p>
+                    </div>
                 </div>
-
-
+                <div class="slides slide_6">
+                    <div class="review-card">
+                        <div class="stars">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="quote">"Highly recommended! Will visit again."</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="navigation">
-                <button class="nav-button" onclick="prevTestimonial()">previous</button>
-                <button class="nav-button" onclick="nextTestimonial()">next</button>
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+
+            <div class="slider-indicators">
+                <button class="active"></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
             </div>
         </div>
+
     </section>
 
-
-    <section class="section section-4" id="section-4">
+    <!-- <section class="section section-4" id="section-4">
         <h2>This is section 4 of this webpage</h2>
-    </section>
-
-
+    </section> -->
 
     <!-- This section contains code for the location of the restaurant and integration of MaP -->
     <section class="section locationMapSection" id="locationMapSection">
@@ -261,7 +308,8 @@
                 <div class="lms-col-1-1">
                     <h4>Locate me here</h4>
                     <br>
-                    <p>Address: 1st Floor, 1st Main Rd,<br> 7th Block, Koramangala, <br>Bengaluru, Karnataka 560095</p>
+                    <p>Address: 1st Floor, 1st Main Rd,<br> 7th Block,
+                        Koramangala, <br>Bengaluru, Karnataka 560095</p>
                 </div>
                 <div class="lms-col-1-2">
                     <button type="button">Take me there !</button>
@@ -278,14 +326,15 @@
         </div>
     </section>
 
-
     <!-- Newsletter section code starts from here  -->
     <section class="section newsletterContainer" id="section-6">
         <div class="nl-container">
             <div class="nl-inputContainer" style="padding: 0 2rem; gap: 0;">
                 <h3 style="font-size: 2.2rem; text-align: left;font-weight: 600;
-                color: #000000; width: 100%; margin: 1rem 0;">Get your first meal for free!</h3>
-                <p class="nl-para">Healthy, tasty and nostalgic meals are just one sign-up away <br> Your first meal is
+                color: #000000; width: 100%; margin: 1rem 0;">Get your first
+                    meal for free!</h3>
+                <p class="nl-para">Healthy, tasty and nostalgic meals
+                    are just one sign-up away <br> Your first meal is
                     on us!</p>
                 <form action="#" class="userSignUp">
                     <div class="form-col-1">
@@ -300,9 +349,11 @@
                     </div>
                     <div class="form-col-2">
                         <div class="form-col-2-1">
-                            <label for="source">Where did you hear us from ?</label><br>
+                            <label for="source">Where did you hear us
+                                from ?</label><br>
                             <select name="source" id="source">
-                                <option value="choose">Please choose one option </option>
+                                <option value="choose">Please choose one
+                                    option </option>
                                 <option value="google">Google</option>
                                 <option value="facebook">Facebook</option>
                                 <option value="instagram">Instagram</option>
@@ -324,15 +375,16 @@
         </div>
     </section>
 
-
     <!-- Footer Section of the page -->
     <footer>
         <div class="foot-col-1 foot-cols">
             <h2>Mughal <span>Durbar</span></h2>
             <div class="foot-logo-container">
                 <img src="./assets/img/restaurant.png" alt="restaurant logo" id="foot-logo">
-                <p> <b>To know more about MD: </b><br><br> +91900000000 <br>
-                    office@moghuldurbar.in </p>
+                <p> <b>To know more about MD: </b><br><br> +91900000000
+                    <br>
+                    office@moghuldurbar.in
+                </p>
             </div>
             <div class="foot-socialMediaLinks-container" style="margin: auto;">
                 <!-- Facebook Icon with a link -->
@@ -395,14 +447,23 @@
         </div>
     </footer>
     <div class="footer-cpr">
-        <h2> &copy; Copyright and Developed. By <span> Krithik M </span>and<span> M Kaushik</span>&reg; </h2>
+        <h2> &copy; Copyright and Developed. By <span> Krithik M </span>and<span>
+                M Kaushik</span>&reg; </h2>
     </div>
-
 
 </body>
 <!-- Including cdn for fonts and icons as well as scripting scripts  -->
 <script src="/scripts/script.js"></script>
+
+<!-- cdn for swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- cdn for icons from ionicons -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- cdn for gsap and scrolltrigger -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script> -->
 
 </html>
