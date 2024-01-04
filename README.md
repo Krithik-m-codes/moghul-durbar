@@ -1,6 +1,6 @@
-# Restaurant Website
+# Moghul Durbar 
 
-This repository contains the code and resources for the website of Moghul Durbar . The website serves as an online platform for the restaurant information , showcasing its menu , gallery , services, location, and more.
+This repository contains the code and resources for the website of Moghul Durbar. The website serves as an online platform for restaurant information, showcasing its menu, gallery, services, location, and more.
 
 ## Table of Contents
 
