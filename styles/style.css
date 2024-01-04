@@ -470,107 +470,6 @@ section[class="catering"] {
     transition: all 0.5s linear;
 }
 
-
-/* Offer section styles starts from here   */
-section[class="offerSection"] {
-    width: 100%;
-    height: 26vh;
-    display: flex;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(/assets/img/backgrounds/offersectionBackground.jpeg);
-    background-blend-mode: darken;
-    /* mix-blend-mode: darken; */
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
-    display: none;
-
-}
-
-.offerSection img[id="left-side-img"] {
-    width: 200px;
-    height: auto;
-    opacity: 1;
-    position: absolute;
-    top: 1%;
-    left: 10%;
-    z-index: 1;
-
-}
-
-.offerSection img[id="right-side-img"] {
-    width: 200px;
-    height: auto;
-    opacity: 1;
-    position: absolute;
-    top: 1%;
-    right: 10%;
-    z-index: 1;
-}
-
-section[class="offerSection"] h4 {
-    font-size: 3.5rem;
-    font-weight: 700 !important;
-    margin: 1rem 1rem;
-    color: #000000;
-    text-shadow: 0 10px 15px #b5b5b5;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    width: 100%;
-
-}
-
-
-.offerSection h4::before,
-.offerSection h4::after {
-    content: " ";
-    display: inline-block;
-    width: 6%;
-    height: 3px;
-    text-align: center;
-    background-color: #000000;
-    opacity: 0.8;
-    margin: 0 1.5rem;
-}
-
-section[class="offerSection"] .offerBtnContainer {
-    width: 50%;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    gap: 2rem;
-}
-
-.offerBtnContainer button {
-    padding: 0.9rem 3rem;
-    margin: auto;
-    font-size: 1.5rem;
-    font-weight: 350;
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 4px 3px 4px rgb(21, 21, 21);
-    background-color: #df1a42;
-    color: #fff;
-}
-
-.offerBtnContainer .strokeLine {
-    height: 50%;
-    width: 2px;
-    background-color: #000000;
-    opacity: 0.5;
-
-}
-
-/* Offer section styles ends here   */
-
-
 /* ParallexGallery styles start from here  */
 section[class="parallexGallery"] {
     width: 100%;
@@ -875,19 +774,18 @@ div[class="breakInPage"] {
 /* section 6 or Newsletter styling starts from here  */
 .newsletterContainer {
     width: 100%;
-    height: 100vh;
-    background-color: rgb(69, 88, 146);
+    height: 98vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../assets/img/svg-img/blob-scene-newsletter.svg);
+    background-image: url("/assets/img/backgrounds/background-newsletter.jpeg");
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .nl-container {
+    background-color: transparent;
     width: 80%;
     height: 70vh;
     display: flex;
@@ -989,7 +887,13 @@ input[type="email"] {
 .nl-inputContainer {
     width: 100%;
     height: 100%;
-    background-color: #9FACE6;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    /* background-color: #9FACE6; */
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1004,14 +908,22 @@ input[type="email"] {
 .nl-imageContainer {
     height: 100%;
     width: 50%;
-    background-color: #9FACE6;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    /* background-color: #9FACE6; */
+    background-color: transparent;
     flex-grow: 1;
     border-radius: 0 5% 5% 0;
 }
 
+
 .nl-imageContainer img {
     width: 100%;
-    height: 100%;
+    height: 96%;
     border-radius: 0 5% 5% 0;
     /* margin: 2vh 2vw; */
     object-fit: cover;
