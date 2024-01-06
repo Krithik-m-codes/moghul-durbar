@@ -54,40 +54,41 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- <div class="maskHeader"></div> -->
-    <header>
-        <div class=" head-col head-col-1">
+    <header id="main-header">
+        <div class="head-col head-col-1">
             <img src="./assets/img/header-md-logo.png" alt="Mughal Durbar Logo">
             <h2>Moghul <span>Durbar</span></h2>
         </div>
         <!-- this part contains main the navigation for all device sizes -->
-        <div class=" head-col head-col-2">
+        <div class="head-col head-col-2">
             <nav class="main-nav">
                 <p><a href="#home" target="_self">Home</a></p>
-                <p><a href="#section-2" target="_self">About</a></p>
-                <p><a href="#section-3" target="_self">Cook wit me</a></p>
-                <p><a href="#section-4" target="_self">random</a></p>
+                <p><a href="#aboutUs" target="_self">About Us</a></p>
+                <p><a href="#bookings" target="_self">Bookings</a></p>
+                <p><a href="#locationMapSection" target="_self">Reach Out</a></p>
             </nav>
         </div>
 
         <!-- the below button is for the menu toggle button  -->
-        <button class="btn-mobileMenu">
-            <ion-icon class="icon-mobile-nav" size="large" name="menu-sharp" onclick="mobileNavToggleO()"></ion-icon>
-            <ion-icon class="icon-mobile-nav" size="large " name="close-sharp" onclick="mobileNavToggleC()"></ion-icon>
-        </button>
+        <div class="hamburger-menu" onclick="hamburgerHandler(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
 
         <!-- the below nav is for the menu items in the menu toggle  -->
         <div id="mobile-menu">
-            <nav class="mobile-nav">
-                <p><a href="#" target="_blank">Home</a></p>
-                <p><a href="#" target="_blank">About</a></p>
-                <p><a href="#" target="_blank">Cook wit me</a></p>
-                <p><a href="#" target="_blank">Menu</a></p>
+            <nav class="mobNav-links">
+                <p><a href="#home" target="_self">Home</a></p>
+                <p><a href="#aboutUs" target="_self">About Us</a></p>
+                <p><a href="#bookings" target="_self">Bookings</a></p>
+                <p><a href="#locationMapSection" target="_self">Reach Out</a></p>
             </nav>
         </div>
     </header>
 
     <!-- this part contains the main body of the page and a hero. -->
-    <section class="hero-section" id="Home">
+    <section class="heroSection" id="Home">
         <div class="hero-col-1">
             <h1>Food is the ingredient <br> that binds us together.</h1>
             <p>Let's get you some meal , now shall we ?.</p>
@@ -98,7 +99,7 @@
     </section>
 
     <!-- This part contains the main body of the page. -->
-    <main class="aboutUs">
+    <main class="aboutUsSection" id="aboutUs">
         <div class="aboutUs-col-1">
             <div class="headerContainer">
                 <h2>About Us</h2>
@@ -108,12 +109,15 @@
                     destination for authentic South Indian cuisine.
                     Nestled in a historic setting, our restaurant is a
                     celebration of the rich flavors and culinary
-                    traditions of the region. With a commitment to quality
+                    traditions of the region. <br>
+                    With a commitment to quality
                     and a passion for South Indian gastronomy, we
                     invite you to savor the essence of tradition in every
-                    bite. Join us on a journey where history meets
-                    flavor, and indulge in the timeless charm of Moghul
-                    Durbar. </p>
+                    bite. <br><br><span>
+                        <marquee behavior="alternate" direction="left">Join us on a journey where history meets
+                            flavor </marquee>
+                    </span><br><br> and indulge in the timeless charm of Moghul
+                    Durbar.</p>
             </div>
         </div>
         <div class="aboutUs-col-2">
@@ -122,7 +126,7 @@
     </main>
 
     <!-- This part contains code for the certificate / licenses  -->
-    <section class="license">
+    <section class="licenseSection">
         <div class="license-col-1">
             <h3>Certified by </h3>
             <span><img src="/assets/img/trademark.png" alt="trademark"
@@ -138,9 +142,10 @@
                 style="width: 100px; height: auto; margin-left: 1rem;" alt="fire_and_safety">
         </div>
     </section>
+    <div class="breakInSection"></div>
 
     <!-- This part contains the sections of the page. -->
-    <section class="catering">
+    <section class="cateringSection" id="bookings">
         <div class="mask"></div>
         <h2>Cater Yourself</h2>
         <div class="catering-col-1">
@@ -160,10 +165,10 @@
             </div>
         </div>
     </section>
-
+    <div class="breakInSection"></div>
 
     <!-- This part contains code for the parallex gallery  -->
-    <section class="parallexGallery">
+    <section class="parallexGallerySection">
         <div class="parallexGallery-col-1">
             <h2>Our Gallery</h2>
             <!-- <p style="font-weight: 200;">Some of our best dishes</p> -->
@@ -219,13 +224,10 @@
                     alt="gallery image 12">
             </div>
     </section>
-    <!-- 
-    <div class="breakInPage">
-        <center>Maa cloudflare</center>
-    </div> -->
+    <div class="breakInSection"></div>
 
     <!-- Section 3 of the page starts from here  -->
-    <section class="testimonials" id="section-3">
+    <section class="testimonialsSection">
         <div class="swiffy-slider slider-nav-autoplay">
             <!-- Main container for the slides  -->
             <div class="slider-container">
@@ -427,9 +429,10 @@
         </div>
 
     </section>
+    <div class="breakInSection"></div>
 
     <!-- This section contains code for the location of the restaurant and integration of MaP -->
-    <section class="section locationMapSection" id="locationMapSection">
+    <section class="locationMapSection" id="locationMapSection">
         <div class="mapInfoContainer">
             <div class="contentContainer">
                 <h3>Foodie bears <span>Hibernate</span> here 😯</h3>
@@ -453,9 +456,10 @@
                 frameborder="0" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
         </div>
     </section>
+    <div class="breakInSection"></div>
 
     <!-- Newsletter section code starts from here  -->
-    <section class="section newsletterContainer" id="section-6">
+    <section class="newsletterSection">
         <div class="nl-container">
             <div class="nl-inputContainer" style="padding: 0 2rem; gap: 0;">
                 <h3 style="font-size: 2.2rem; text-align: left;font-weight: 600;
@@ -502,6 +506,7 @@
             </div>
         </div>
     </section>
+    <div class="breakInSection"></div>
 
     <!-- Footer Section of the page -->
     <footer>
