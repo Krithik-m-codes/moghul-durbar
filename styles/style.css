@@ -56,9 +56,85 @@ header {
     display: none;
 }
 
-#mobile-menu nav {
+
+#mobile-menu {
     display: none;
 }
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-width: 458px) {
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
 
 header .head-col {
     margin: 0 auto;
@@ -155,30 +231,33 @@ nav p:hover {
     align-items: center;
     flex-direction: column;
     gap: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 
 }
 
 .heroSection h1 {
-    font-size: 3.5rem;
+    font-size: 4dvw;
     font-weight: 500;
-    margin-bottom: 1rem;
-    margin: 1rem 0;
-    text-shadow: 1px 10px 15px #212111;
+    text-align: left;
+    margin: 3rem 0;
+    text-shadow: 1px 10px 25px #212111;
 }
+
+
 
 .hero-col-1 p {
     text-align: right;
     color: black;
     margin: auto;
-    font-size: inherit;
+    font-size: 2dvw;
+    /* font-size: inherit; */
 }
 
 .hero-col-2 button {
     background-color: #019B77;
     padding: 0.9rem 2rem;
-    color: #ffffff;
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     border: none;
     border-radius: 5px;
@@ -187,22 +266,24 @@ nav p:hover {
 }
 
 .hero-col-2 button:hover {
-
-    background-color: #c8ff00a5;
     color: white;
+    opacity: 1;
     transform: scale(1.1);
     filter: brightness(0.3);
-    filter: drop-shadow(1px 1px 0.5rem #232222);
     transition: all 0.5s ease;
+}
+
+.hero-col-2 button a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .hero-col-2 button:active {
     transform: scale(1.1);
     filter: brightness(0.3);
-    opacity: 0.7;
-    filter: drop-shadow(1px 1px 0.5rem #000000);
     transition: all 0.5s ease;
 }
+
 
 .hero-col-2 {
     margin: 0 auto;
@@ -244,7 +325,6 @@ main .contentContainer {
 }
 
 main .headerContainer {
-
     width: 100%;
     display: flex;
     justify-content: center;
@@ -253,7 +333,7 @@ main .headerContainer {
 }
 
 main .aboutUs-col-1 h2 {
-    font-size: 4rem;
+    font-size: 4dvw;
     text-align: left;
     background-color: #b5b5b5;
     padding: 0.5rem 1rem;
@@ -264,7 +344,7 @@ main .aboutUs-col-1 h2 {
 }
 
 main .aboutUs-col-1 p {
-    font-size: 1.4rem;
+    font-size: 1.4dvw;
     font-weight: 400;
     font-family: 'Marhey', cursive;
     margin: 1rem 0;
@@ -274,7 +354,7 @@ main .aboutUs-col-1 p {
 }
 
 main span {
-    font-size: 1.5rem;
+    font-size: 1.5dvw;
     font-style: italic;
     background-color: lightgoldenrodyellow;
     color: #000;
@@ -323,7 +403,7 @@ section {
 
 /* Section licenses styles starts from here   */
 section[class="licenseSection"] {
-    height: 20vh;
+    height: 2\5vh;
     background-color: whitesmoke;
     display: flex;
     justify-content: baseline;
@@ -498,10 +578,10 @@ section[class="cateringSection"] {
     transition: all 0.5s linear;
 }
 
-/* ParallexGallery styles start from here  */
-section[class="parallexGallerySection"] {
+/* imgGallery styles start from here  */
+section[class="imgGallerySection"] {
     width: 100%;
-    background-image: url("/assets/img/backgrounds/background-parallexGallery.jpeg");
+    background-image: url("/assets/img/backgrounds/background-imgGallery.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -515,14 +595,14 @@ section[class="parallexGallerySection"] {
     background-color: #252519;
 }
 
-.parallexGallery-col-1 {
+.imgGallery-col-1 {
     width: 100%;
     height: auto;
     text-align: center;
 }
 
 
-.parallexGallery-col-2 {
+.imgGallery-col-2 {
     margin: 2rem 0;
     padding: auto;
     width: 96%;
@@ -541,9 +621,9 @@ section[class="parallexGallerySection"] {
 }
 
 
-.parallexGallery-col-1 h2 {
+.imgGallery-col-1 h2 {
     /* background-color: rgb(245, 220, 77); */
-    text-shadow: 1px 2px 4px #000000; 
+    text-shadow: 1px 2px 4px #000000;
     font-size: 4.5rem;
     width: 100%;
     text-align: center;
@@ -554,8 +634,8 @@ section[class="parallexGallerySection"] {
 
 }
 
-.parallexGallery-col-1 h2::before,
-.parallexGallery-col-1 h2::after {
+.imgGallery-col-1 h2::before,
+.imgGallery-col-1 h2::after {
     content: " ";
     display: inline-flex;
     width: 12%;
@@ -566,18 +646,18 @@ section[class="parallexGallerySection"] {
     margin: 0 1.5rem;
 }
 
-.parallexGallery-col-2 div {
+.imgGallery-col-2 div {
     min-width: 259px;
     height: 100%;
     width: max-content;
 }
 
-.parallexGallery-col-2 div:not(:hover) {
+.imgGallery-col-2 div:not(:hover) {
     opacity: 0.5;
     filter: grayscale(100%);
 }
 
-.parallexGallery-col-2 img {
+.imgGallery-col-2 img {
     min-width: 229px;
     max-width: 100%;
     min-height: 100%;
@@ -588,7 +668,7 @@ section[class="parallexGallerySection"] {
 }
 
 /* scrollbar styles for the gallery  */
-.parallexGallery-col-2::-webkit-scrollbar {
+.imgGallery-col-2::-webkit-scrollbar {
     width: 3px;
     height: 3px;
     display: block;
@@ -596,14 +676,14 @@ section[class="parallexGallerySection"] {
     scrollbar-gutter: auto;
 }
 
-.parallexGallery-col-2::-webkit-scrollbar-track {
+.imgGallery-col-2::-webkit-scrollbar-track {
     background-color: #212121;
     width: 3px;
     border-radius: 3px;
 
 }
 
-.parallexGallery-col-2::-webkit-scrollbar-thumb {
+.imgGallery-col-2::-webkit-scrollbar-thumb {
     background-color: #ffffff;
     border-radius: 5px;
     /* height: 1px; */

@@ -75,17 +75,16 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
-
-        <!-- the below nav is for the menu items in the menu toggle  -->
-        <div id="mobile-menu">
-            <nav class="mobNav-links">
-                <p><a href="#home" target="_self">Home</a></p>
-                <p><a href="#aboutUs" target="_self">About Us</a></p>
-                <p><a href="#bookings" target="_self">Bookings</a></p>
-                <p><a href="#locationMapSection" target="_self">Reach Out</a></p>
-            </nav>
-        </div>
     </header>
+    <!-- The overlay for mobile screen sizes  -->
+    <div id="mobileNav" class="overlay">
+        <div class="overlay-content">
+            <a href="#Home" onclick="closeNav()">Home</a>
+            <a href="#aboutUs" onclick="closeNav()">About Us</a>
+            <a href="#bookings" onclick="closeNav()">Bookings</a>
+            <a href="#locationMapSection" onclick="closeNav()">Reach Out</a>
+        </div>
+    </div>
 
     <!-- this part contains the main body of the page and a hero. -->
     <section class="heroSection" id="Home">
@@ -94,7 +93,9 @@
             <p>Let's get you some meal , now shall we ?.</p>
         </div>
         <div class="hero-col-2">
-            <button>Order Now</button>
+            <button>
+                <a href="/src/orderPage.html" target="_blank" rel="noopener noreferrer">Order Now</a>
+            </button>
         </div>
     </section>
 
@@ -109,15 +110,21 @@
                     destination for authentic South Indian cuisine.
                     Nestled in a historic setting, our restaurant is a
                     celebration of the rich flavors and culinary
-                    traditions of the region. <br>
+                    traditions of the region.
+                    <br>
                     With a commitment to quality
                     and a passion for South Indian gastronomy, we
                     invite you to savor the essence of tradition in every
-                    bite. <br><br><span>
+                    bite.
+                    <br><br>
+                    <span>
                         <marquee behavior="alternate" direction="left">Join us on a journey where history meets
-                            flavor </marquee>
-                    </span><br><br> and indulge in the timeless charm of Moghul
-                    Durbar.</p>
+                            flavor
+                        </marquee>
+                    </span><br><br>
+                    and indulge in the timeless charm of Moghul
+                    Durbar.
+                </p>
             </div>
         </div>
         <div class="aboutUs-col-2">
@@ -168,61 +175,62 @@
     <div class="breakInSection"></div>
 
     <!-- This part contains code for the parallex gallery  -->
-    <section class="parallexGallerySection">
-        <div class="parallexGallery-col-1">
+    <section class="imgGallerySection">
+        <div class="imgGallery-col-1">
             <h2>Our Gallery</h2>
             <!-- <p style="font-weight: 200;">Some of our best dishes</p> -->
         </div>
-        <div class="parallexGallery-col-2">
+        <div class="imgGallery-col-2">
             <!-- <div style="width: 2rem; height: 2rem; opacity: 0;"></div> -->
-            <div class="parallexGallery-col-2-1">
+            <div class="imgGallery-col-2-1">
                 <img src="https://i.pinimg.com/564x/0e/20/47/0e204730f48027688ad6e611841da17f.jpg"
                     alt="gallery image 1">
             </div>
-            <div class="parallexGallery-col-2-2">
+            <div class="imgGallery-col-2-2">
                 <img src="https://i.pinimg.com/564x/5a/6c/47/5a6c4732299884f40a698ddae7c9fb9c.jpg"
                     alt="gallery image 2">
             </div>
-            <div class="parallexGallery-col-2-3">
+            <div class="imgGallery-col-2-3">
                 <img src="https://i.pinimg.com/564x/aa/f3/a8/aaf3a80f91dd153bf93ef03a0cda5493.jpg"
                     alt="gallery image 3">
             </div>
-            <div class="parallexGallery-col-2-4">
+            <div class="imgGallery-col-2-4">
                 <img src="https://i.pinimg.com/564x/10/64/ae/1064ae327eb43857d07816c0760f3f91.jpg"
                     alt="gallery image 4">
             </div>
-            <div class="parallexGallery-col-2-5">
+            <div class="imgGallery-col-2-5">
                 <img src="https://i.pinimg.com/564x/fa/be/ee/fabeee5ede10b4c743a300d7bb969d19.jpg"
                     alt="gallery image 5">
             </div>
-            <div class="parallexGallery-col-2-6">
+            <div class="imgGallery-col-2-6">
                 <img src="https://i.pinimg.com/564x/d3/2b/d6/d32bd612832ee61b1f0cd0e963275dee.jpg"
                     alt="gallery image 6">
             </div>
-            <div class="parallexGallery-col-2-7">
+            <div class="imgGallery-col-2-7">
                 <img src="https://i.pinimg.com/564x/01/95/47/019547290fbb82cc65c2b945f27b31bf.jpg"
                     alt="gallery image 7">
             </div>
-            <div class="parallexGallery-col-2-8">
+            <div class="imgGallery-col-2-8">
                 <img src="https://i.pinimg.com/564x/c6/ff/25/c6ff2599bee9e66648168acfbcde638f.jpg"
                     alt="gallery image 8">
             </div>
-            <div class="parallexGallery-col-2-9">
+            <div class="imgGallery-col-2-9">
                 <img src="https://i.pinimg.com/564x/24/5c/e6/245ce6d7cdfd87f7c7db6135c86979f2.jpg"
                     alt="gallery image 9">
             </div>
-            <div class="parallexGallery-col-2-10">
+            <div class="imgGallery-col-2-10">
                 <img src="https://i.pinimg.com/564x/b4/f2/25/b4f225c0bd25c14b94fd2922905f630e.jpg"
                     alt="gallery image 10">
             </div>
-            <div class="parallexGallery-col-2-11">
+            <div class="imgGallery-col-2-11">
                 <img src="https://i.pinimg.com/564x/dc/93/d1/dc93d11d102806fb3b4089df8f44a0f1.jpg"
                     alt="gallery image 11">
             </div>
-            <div class="parallexGallery-col-2-12">
+            <div class="imgGallery-col-2-12">
                 <img src="https://i.pinimg.com/564x/a3/42/76/a342769823b1424ef7c0891b9ad83853.jpg"
                     alt="gallery image 12">
             </div>
+        </div>
     </section>
     <div class="breakInSection"></div>
 

@@ -1,6 +1,9 @@
 /* Web responsive styles for mobile from here */
-@media (max-width: 768px) {
+@media screen and (max-width: 458px) {
 
+
+
+    /* Global styles for mobile devices only starts here  */
     body {
         overflow-x: hidden;
         scroll-behavior: smooth;
@@ -11,27 +14,11 @@
     /* Header styles for mobile devices only starts here  */
     header {
         height: 8dvh;
-        width: 100%;
-        display: flex;
         background-color: #440044;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        /* overflow: hidden; */
     }
 
     header .head-col-2 {
         display: none;
-    }
-
-    header .head-col-1 {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: row;
     }
 
     header .head-col-1 img {
@@ -50,9 +37,6 @@
 
     /* for menu bar for mobile devices  */
 
-
-
-    /* fix thiss dumbasss */
     .hamburger-menu {
         display: inline-block;
         cursor: pointer;
@@ -111,75 +95,53 @@
 
 
     /* Hero section styles for mobile devices only starts here  */
-    .hero-section {
-        background-image: url("../assets/img/backgrounds/mobile-size-backgroundForHeroSection.jpeg");
+    .heroSection {
+        background-image: url("/assets/img/backgrounds/mobSize-backgroundHeroSection.jpeg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 80vh;
-        width: 100%;
-        /* padding-top: 10vh; */
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        gap: 3rem;
-
+        opacity: 0.9;
+        height: 88vh;
+        font-size: 4dvw;
     }
 
-
-    .hero-section h1 {
-        font-size: 2.5rem;
-        font-weight: 900;
-        text-align: center;
-        margin-bottom: 5.5vh;
-        text-shadow: 6px 12px 15px #000000;
+    .heroSection h1 {
+        opacity: 0;
+        font-size: 13vw;
+        margin: auto;
+        text-wrap: wrap; 
+        text-align: left;
+        margin: auto 3rem;
+        text-shadow: 1px 1px 1px #000000;
     }
 
-    .hero-section .hero-col-1 p {
+    .heroSection p {
+        font-size: 6vw;
+        margin: 2rem 0 0 0;
+        background-color: antiquewhite;
+        padding: 0.5rem;
+        border-top-left-radius: 22px;
+        border-bottom-left-radius: 22px;
         text-align: right;
-        color: #FAB40B;
-        margin: auto;
-        font-size: inherit;
-        text-shadow: #00000061 1px 1px 1px;
-        background-color: #060318;
-        border-radius: 4.5rem 0 0 4.5rem;
-        box-shadow: 10px 10px 20px #ffffff;
-        padding: 0.6vh 0.2vw 0.6vh 0.2vw;
-
+        text-shadow: 1px 1px 1px #000000;
     }
 
-    .hero-section .hero-col-2 button {
-        padding: 0.7rem 1.5rem;
-        margin: auto;
-        font-size: 1.2rem;
-        font-weight: 500;
-        border: none;
-        border-radius: 5px;
-        box-shadow: #000 4px 3px 4px;
-
-    }
 
 
     /* Main styles for mobile devices only starts here  */
-    .aboutUsSection {
+    main {
         width: 100%;
-        overflow: hidden;
-        height: 100vh;
-        font-size: 1.5rem;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1rem 0;
         flex-direction: column;
-        column-gap: 2rem;
+        font-size: 14vw;
+        padding: 0 0.5rem;
     }
-
-
-
-
-
-
 
 
 
