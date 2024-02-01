@@ -273,7 +273,7 @@ nav p:hover {
     transition: all 0.5s ease;
 }
 
-.hero-col-2 button a{
+.hero-col-2 button a {
     text-decoration: none;
     color: #fff;
 }
@@ -403,7 +403,7 @@ section {
 
 /* Section licenses styles starts from here   */
 section[class="licenseSection"] {
-    height: 2\5vh;
+    height: 20vh;
     background-color: whitesmoke;
     display: flex;
     justify-content: baseline;
@@ -436,6 +436,7 @@ section[class="licenseSection"] {
     width: 150px;
     height: auto;
     margin: auto;
+    mix-blend-mode: multiply;
 }
 
 .license-col-2 img:hover {
