@@ -721,7 +721,7 @@ section[class="testimonialsSection"] {
     place-items: center;
     font-size: 2rem;
     background-color: #717E6D;
-    background-color: #261D1F;
+    /* background-color: #261D1F; */
 }
 
 
@@ -889,32 +889,35 @@ div[class="breakInPage"] {
 /* section 6 or Newsletter styling starts from here  */
 .newsletterSection {
     width: 100%;
-    height: 98vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/assets/img/backgrounds/background-newsletter.jpeg");
+    background-image: url("/assets/img/backgrounds/newsletter-bg.jpeg");
+    /* background-color: #0f5336; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .nl-container {
-    background-color: transparent;
+    /* background-color: transparent; */
     width: 80%;
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    border-radius: 5%;
-    box-shadow: 1rem 1rem 4rem #000000a9;
+    border-radius: 3em;
+    background-color: #fff8e51a;
+    box-shadow: 0.5rem 0.5rem 7rem #000000b2;
 }
 
 
 .nl-inputContainer p {
     width: 100%;
     font-size: 1.3rem;
+    border: none;
     text-align: left;
     font-weight: 300;
     margin: 1rem 0 3rem 0;
