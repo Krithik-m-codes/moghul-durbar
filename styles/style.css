@@ -439,6 +439,12 @@ section[class="licenseSection"] {
     mix-blend-mode: multiply;
 }
 
+.license-img {
+    width: 100px;
+    height: auto;
+    margin: 0 0.5rem;
+}
+
 .license-col-2 img:hover {
     filter: grayscale(0%);
     opacity: 1;
